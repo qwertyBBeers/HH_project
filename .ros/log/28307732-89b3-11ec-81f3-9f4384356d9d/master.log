@@ -1,0 +1,40 @@
+[rosmaster.main][INFO] 2022-02-09 23:18:31,222: initialization complete, waiting for shutdown
+[rosmaster.main][INFO] 2022-02-09 23:18:31,222: Starting ROS Master Node
+[xmlrpc][INFO] 2022-02-09 23:18:31,223: XML-RPC server binding to 0.0.0.0:11311
+[xmlrpc][INFO] 2022-02-09 23:18:31,223: Started XML-RPC server [http://hh:11311/]
+[xmlrpc][INFO] 2022-02-09 23:18:31,223: xml rpc node: starting XML-RPC server
+[rosmaster.master][INFO] 2022-02-09 23:18:31,223: Master initialized: port[11311], uri[http://hh:11311/]
+[rosmaster.master][INFO] 2022-02-09 23:18:31,291: +PARAM [/run_id] by /roslaunch
+[rosmaster.master][INFO] 2022-02-09 23:18:31,293: +PARAM [/roslaunch/uris/host_hh__40967] by /roslaunch
+[rosmaster.master][INFO] 2022-02-09 23:18:31,321: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2022-02-09 23:18:31,321: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2022-02-09 23:18:31,327: +SERVICE [/rosout/get_loggers] /rosout http://hh:34619/
+[rosmaster.master][INFO] 2022-02-09 23:18:31,327: +SERVICE [/rosout/set_logger_level] /rosout http://hh:34619/
+[rosmaster.master][INFO] 2022-02-09 23:18:31,328: +PUB [/rosout_agg] /rosout http://hh:34619/
+[rosmaster.master][INFO] 2022-02-09 23:18:31,329: +SUB [/rosout] /rosout http://hh:34619/
+[rosmaster.master][INFO] 2022-02-09 23:19:02,161: +PUB [/rosout] /turtlesim http://hh:35085/
+[rosmaster.master][INFO] 2022-02-09 23:19:02,162: +SERVICE [/turtlesim/get_loggers] /turtlesim http://hh:35085/
+[rosmaster.master][INFO] 2022-02-09 23:19:02,162: +SERVICE [/turtlesim/set_logger_level] /turtlesim http://hh:35085/
+[rosmaster.master][INFO] 2022-02-09 23:19:02,164: +PARAM [/turtlesim/background_r] by /turtlesim
+[rosmaster.master][INFO] 2022-02-09 23:19:02,165: +PARAM [/turtlesim/background_g] by /turtlesim
+[rosmaster.master][INFO] 2022-02-09 23:19:02,165: +PARAM [/turtlesim/background_b] by /turtlesim
+[rosmaster.master][INFO] 2022-02-09 23:19:02,176: +SERVICE [/clear] /turtlesim http://hh:35085/
+[rosmaster.master][INFO] 2022-02-09 23:19:02,177: +SERVICE [/reset] /turtlesim http://hh:35085/
+[rosmaster.master][INFO] 2022-02-09 23:19:02,177: +SERVICE [/spawn] /turtlesim http://hh:35085/
+[rosmaster.master][INFO] 2022-02-09 23:19:02,177: +SERVICE [/kill] /turtlesim http://hh:35085/
+[rosmaster.master][INFO] 2022-02-09 23:19:02,177: +CACHEDPARAM [/rosout_disable_topics_generation] by /turtlesim
+[rosmaster.master][INFO] 2022-02-09 23:19:02,178: +SUB [/turtle1/cmd_vel] /turtlesim http://hh:35085/
+[rosmaster.master][INFO] 2022-02-09 23:19:02,178: publisherUpdate[/rosout] -> http://hh:34619/ ['http://hh:35085/']
+[rosmaster.master][INFO] 2022-02-09 23:19:02,179: +PUB [/turtle1/pose] /turtlesim http://hh:35085/
+[rosmaster.master][INFO] 2022-02-09 23:19:02,180: +PUB [/turtle1/color_sensor] /turtlesim http://hh:35085/
+[rosmaster.master][INFO] 2022-02-09 23:19:02,180: +SERVICE [/turtle1/set_pen] /turtlesim http://hh:35085/
+[rosmaster.master][INFO] 2022-02-09 23:19:02,181: +SERVICE [/turtle1/teleport_relative] /turtlesim http://hh:35085/
+[rosmaster.master][INFO] 2022-02-09 23:19:02,181: +SERVICE [/turtle1/teleport_absolute] /turtlesim http://hh:35085/
+[rosmaster.master][INFO] 2022-02-09 23:19:02,182: publisherUpdate[/rosout] -> http://hh:34619/ ['http://hh:35085/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 23:20:18,820: -PUB [/rosout_agg] /rosout http://hh:34619/
+[rosmaster.master][INFO] 2022-02-09 23:20:18,820: -SUB [/rosout] /rosout http://hh:34619/
+[rosmaster.master][INFO] 2022-02-09 23:20:18,821: -SERVICE [/rosout/get_loggers] /rosout rosrpc://hh:49817
+[rosmaster.master][INFO] 2022-02-09 23:20:18,821: -SERVICE [/rosout/set_logger_level] /rosout rosrpc://hh:49817
+[rosmaster.main][INFO] 2022-02-09 23:20:18,908: keyboard interrupt, will exit
+[rosmaster.main][INFO] 2022-02-09 23:20:18,908: stopping master...
+[rospy.core][INFO] 2022-02-09 23:20:18,908: signal_shutdown [atexit]

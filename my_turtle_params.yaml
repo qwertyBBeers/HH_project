@@ -1,0 +1,18 @@
+another_node:
+  background_b: 255
+  background_g: 86
+  background_r: 69
+rosdistro: 'noetic
+
+  '
+roslaunch:
+  uris:
+    host_hh__45733: http://hh:45733/
+rosversion: '1.15.14
+
+  '
+run_id: 8fdb015e-89b3-11ec-81f3-9f4384356d9d
+turtlesim:
+  background_b: 255
+  background_g: 86
+  background_r: 69

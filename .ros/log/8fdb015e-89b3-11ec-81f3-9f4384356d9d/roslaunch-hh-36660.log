@@ -1,0 +1,83 @@
+[roslaunch][INFO] 2022-02-09 23:21:24,747: Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+[roslaunch][INFO] 2022-02-09 23:21:24,749: Done checking log file disk usage. Usage is <1GB.
+[roslaunch][INFO] 2022-02-09 23:21:24,749: roslaunch starting with args ['roscore', '--core']
+[roslaunch][INFO] 2022-02-09 23:21:24,750: roslaunch env is environ({'SHELL': '/bin/bash', 'ROS_VERSION': '1', 'SESSION_MANAGER': 'local/hh:@/tmp/.ICE-unix/1646,unix/hh:/tmp/.ICE-unix/1646', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PKG_CONFIG_PATH': '/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LC_ADDRESS': 'ko_KR.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'ko_KR.UTF-8', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'TERMINATOR_UUID': 'urn:uuid:be6c9175-7a7a-43c7-a333-c87f92f0c7e4', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'LC_MONETARY': 'ko_KR.UTF-8', 'SSH_AGENT_PID': '1603', 'ROS_PACKAGE_PATH': '/opt/ros/noetic/share', 'GTK_MODULES': 'gail:atk-bridge', 'ROSLISP_PACKAGE_DIRECTORIES': '', 'PWD': '/home/hh', 'LOGNAME': 'hh', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'WINDOWPATH': '2', 'HOME': '/home/hh', 'USERNAME': 'hh', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'ko_KR.UTF-8', 'LANG': 'en_US.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/opt/ros/noetic', 'INVOCATION_ID': '4318c1881f0742dbb4ba2b74f47fd9ca', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'MANAGERPID': '1389', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/opt/ros/noetic/lib/python3/dist-packages', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'hh', 'DISPLAY': ':0', 'SHLVL': '1', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'ROS_MASTER_URI': 'http://localhost:11311', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'LD_LIBRARY_PATH': '/opt/ros/noetic/lib', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_TIME': 'ko_KR.UTF-8', 'JOURNAL_STREAM': '8:48684', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '35815', 'LC_NUMERIC': 'ko_KR.UTF-8', '_': '/opt/ros/noetic/bin/roscore', 'ROS_LOG_FILENAME': '/home/hh/.ros/log/8fdb015e-89b3-11ec-81f3-9f4384356d9d/roslaunch-hh-36660.log'})
+[roslaunch][INFO] 2022-02-09 23:21:24,750: starting in server mode
+[roslaunch.parent][INFO] 2022-02-09 23:21:24,750: starting roslaunch parent run
+[roslaunch][INFO] 2022-02-09 23:21:24,750: loading roscore config file /opt/ros/noetic/etc/ros/roscore.xml
+[roslaunch][INFO] 2022-02-09 23:21:24,990: Added core node of type [rosout/rosout] in namespace [/]
+[roslaunch.pmon][INFO] 2022-02-09 23:21:24,990: start_process_monitor: creating ProcessMonitor
+[roslaunch.pmon][INFO] 2022-02-09 23:21:24,990: created process monitor <ProcessMonitor(ProcessMonitor-1, initial daemon)>
+[roslaunch.pmon][INFO] 2022-02-09 23:21:24,990: start_process_monitor: ProcessMonitor started
+[roslaunch.parent][INFO] 2022-02-09 23:21:24,990: starting parent XML-RPC server
+[roslaunch.server][INFO] 2022-02-09 23:21:24,991: starting roslaunch XML-RPC server
+[roslaunch.server][INFO] 2022-02-09 23:21:24,991: waiting for roslaunch XML-RPC server to initialize
+[xmlrpc][INFO] 2022-02-09 23:21:24,991: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2022-02-09 23:21:24,991: Started XML-RPC server [http://hh:45733/]
+[xmlrpc][INFO] 2022-02-09 23:21:24,991: xml rpc node: starting XML-RPC server
+[roslaunch][INFO] 2022-02-09 23:21:25,002: started roslaunch server http://hh:45733/
+[roslaunch.parent][INFO] 2022-02-09 23:21:25,002: ... parent XML-RPC server started
+[roslaunch][INFO] 2022-02-09 23:21:25,002: master.is_running[http://hh:11311/]
+[roslaunch][INFO] 2022-02-09 23:21:25,003: auto-starting new master
+[roslaunch][INFO] 2022-02-09 23:21:25,003: create_master_process: rosmaster, /opt/ros/noetic/share/ros, 11311, 3, None, False
+[roslaunch][INFO] 2022-02-09 23:21:25,003: process[master]: launching with args [['rosmaster', '--core', '-p', '11311', '-w', '3']]
+[roslaunch.pmon][INFO] 2022-02-09 23:21:25,003: ProcessMonitor.register[master]
+[roslaunch.pmon][INFO] 2022-02-09 23:21:25,003: ProcessMonitor.register[master] complete
+[roslaunch][INFO] 2022-02-09 23:21:25,003: process[master]: starting os process
+[roslaunch][INFO] 2022-02-09 23:21:25,003: process[master]: start w/ args [['rosmaster', '--core', '-p', '11311', '-w', '3', '__log:=/home/hh/.ros/log/8fdb015e-89b3-11ec-81f3-9f4384356d9d/master.log']]
+[roslaunch][INFO] 2022-02-09 23:21:25,003: process[master]: cwd will be [/home/hh/.ros]
+[roslaunch][INFO] 2022-02-09 23:21:25,005: process[master]: started with pid [36668]
+[roslaunch][INFO] 2022-02-09 23:21:25,006: master.is_running[http://hh:11311/]
+[roslaunch][INFO] 2022-02-09 23:21:25,106: master.is_running[http://hh:11311/]
+[roslaunch][INFO] 2022-02-09 23:21:25,207: master.is_running[http://hh:11311/]
+[roslaunch][INFO] 2022-02-09 23:21:25,209: master.is_running[http://hh:11311/]
+[roslaunch][INFO] 2022-02-09 23:21:25,211: ROS_MASTER_URI=http://hh:11311/
+[roslaunch][INFO] 2022-02-09 23:21:25,213: setting /run_id to 8fdb015e-89b3-11ec-81f3-9f4384356d9d
+[roslaunch][INFO] 2022-02-09 23:21:25,215: setting /roslaunch/uris/host_hh__45733' to http://hh:45733/
+[roslaunch][INFO] 2022-02-09 23:21:25,217: ... preparing to launch node of type [rosout/rosout]
+[roslaunch][INFO] 2022-02-09 23:21:25,217: create_node_process: package[rosout] type[rosout] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://hh:11311/]
+[roslaunch][INFO] 2022-02-09 23:21:25,218: process[rosout-1]: env[{'SHELL': '/bin/bash', 'ROS_VERSION': '1', 'SESSION_MANAGER': 'local/hh:@/tmp/.ICE-unix/1646,unix/hh:/tmp/.ICE-unix/1646', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PKG_CONFIG_PATH': '/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LC_ADDRESS': 'ko_KR.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'ko_KR.UTF-8', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'TERMINATOR_UUID': 'urn:uuid:be6c9175-7a7a-43c7-a333-c87f92f0c7e4', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'LC_MONETARY': 'ko_KR.UTF-8', 'SSH_AGENT_PID': '1603', 'ROS_PACKAGE_PATH': '/opt/ros/noetic/share', 'GTK_MODULES': 'gail:atk-bridge', 'ROSLISP_PACKAGE_DIRECTORIES': '', 'PWD': '/home/hh', 'LOGNAME': 'hh', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'WINDOWPATH': '2', 'HOME': '/home/hh', 'USERNAME': 'hh', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'ko_KR.UTF-8', 'LANG': 'en_US.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/opt/ros/noetic', 'INVOCATION_ID': '4318c1881f0742dbb4ba2b74f47fd9ca', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'MANAGERPID': '1389', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/opt/ros/noetic/lib/python3/dist-packages', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'hh', 'DISPLAY': ':0', 'SHLVL': '1', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'ROS_MASTER_URI': 'http://hh:11311/', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'LD_LIBRARY_PATH': '/opt/ros/noetic/lib', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_TIME': 'ko_KR.UTF-8', 'JOURNAL_STREAM': '8:48684', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '35815', 'LC_NUMERIC': 'ko_KR.UTF-8', '_': '/opt/ros/noetic/bin/roscore', 'ROS_LOG_FILENAME': '/home/hh/.ros/log/8fdb015e-89b3-11ec-81f3-9f4384356d9d/roslaunch-hh-36660.log'}]
+[roslaunch][INFO] 2022-02-09 23:21:25,239: process[rosout-1]: args[['/opt/ros/noetic/lib/rosout/rosout', '__name:=rosout']]
+[roslaunch][INFO] 2022-02-09 23:21:25,239: ... created process [rosout-1]
+[roslaunch.pmon][INFO] 2022-02-09 23:21:25,239: ProcessMonitor.register[rosout-1]
+[roslaunch.pmon][INFO] 2022-02-09 23:21:25,239: ProcessMonitor.register[rosout-1] complete
+[roslaunch][INFO] 2022-02-09 23:21:25,239: ... registered process [rosout-1]
+[roslaunch][INFO] 2022-02-09 23:21:25,239: process[rosout-1]: starting os process
+[roslaunch][INFO] 2022-02-09 23:21:25,239: process[rosout-1]: start w/ args [['/opt/ros/noetic/lib/rosout/rosout', '__name:=rosout', '__log:=/home/hh/.ros/log/8fdb015e-89b3-11ec-81f3-9f4384356d9d/rosout-1.log']]
+[roslaunch][INFO] 2022-02-09 23:21:25,239: process[rosout-1]: cwd will be [/home/hh/.ros]
+[roslaunch][INFO] 2022-02-09 23:21:25,241: process[rosout-1]: started with pid [36678]
+[roslaunch][INFO] 2022-02-09 23:21:25,241: ... successfully launched [rosout-1]
+[roslaunch][INFO] 2022-02-09 23:21:25,241: load_parameters starting ...
+[roslaunch][INFO] 2022-02-09 23:21:25,244: ... load_parameters complete
+[roslaunch][INFO] 2022-02-09 23:21:25,244: launch_nodes: launching local nodes ...
+[roslaunch][INFO] 2022-02-09 23:21:25,244: ... launch_nodes complete
+[roslaunch.pmon][INFO] 2022-02-09 23:21:25,244: registrations completed <ProcessMonitor(ProcessMonitor-1, started daemon 140690737731328)>
+[roslaunch.parent][INFO] 2022-02-09 23:21:25,244: ... roslaunch parent running, waiting for process exit
+[roslaunch][INFO] 2022-02-09 23:21:25,244: spin
+[roslaunch.pmon][INFO] 2022-02-09 14:53:03,789: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, started daemon 140690737731328)>
+[roslaunch.pmon][INFO] 2022-02-09 14:53:03,883: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon 140690737731328)>
+[roslaunch.pmon][INFO] 2022-02-09 14:53:03,884: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon 140690737731328)>: remaining procs are [<roslaunch.nodeprocess.LocalProcess object at 0x7ff51d74a820>, <roslaunch.nodeprocess.LocalProcess object at 0x7ff51d74a790>]
+[roslaunch.pmon][INFO] 2022-02-09 14:53:03,886: ProcessMonitor exit: killing rosout-1
+[roslaunch][INFO] 2022-02-09 14:53:03,886: [rosout-1] killing on exit
+[roslaunch][INFO] 2022-02-09 14:53:03,886: process[rosout-1]: killing os process with pid[36678] pgid[36678]
+[roslaunch][INFO] 2022-02-09 14:53:03,887: [rosout-1] sending SIGINT to pgid [36678]
+[roslaunch][INFO] 2022-02-09 14:53:03,887: [rosout-1] sent SIGINT to pgid [36678]
+[roslaunch][INFO] 2022-02-09 14:53:04,187: process[rosout-1]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2022-02-09 14:53:04,188: ProcessMonitor exit: killing master
+[roslaunch][INFO] 2022-02-09 14:53:04,188: [master] killing on exit
+[roslaunch][INFO] 2022-02-09 14:53:04,188: process[master]: killing os process with pid[36668] pgid[36668]
+[roslaunch][INFO] 2022-02-09 14:53:04,188: [master] sending SIGINT to pgid [36668]
+[roslaunch][INFO] 2022-02-09 14:53:04,188: [master] sent SIGINT to pgid [36668]
+[roslaunch][INFO] 2022-02-09 14:53:04,388: process[master]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2022-02-09 14:53:04,389: ProcessMonitor exit: cleaning up data structures and signals
+[roslaunch.pmon][INFO] 2022-02-09 14:53:04,389: ProcessMonitor exit: pmon has shutdown
+[roslaunch][INFO] 2022-02-09 14:53:04,389: process monitor is done spinning, initiating full shutdown
+[roslaunch][INFO] 2022-02-09 14:53:04,389: runner.stop()
+[roslaunch][INFO] 2022-02-09 14:53:04,389: shutting down processing monitor...
+[roslaunch][INFO] 2022-02-09 14:53:04,389: shutting down processing monitor <ProcessMonitor(ProcessMonitor-1, stopped daemon 140690737731328)>
+[roslaunch.pmon][INFO] 2022-02-09 14:53:04,390: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, stopped daemon 140690737731328)>
+[roslaunch][INFO] 2022-02-09 14:53:04,390: ... shutting down processing monitor complete
+[roslaunch][INFO] 2022-02-09 14:53:04,390: done
+[roslaunch.pmon][INFO] 2022-02-09 14:53:04,390: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, stopped daemon 140690737731328)>
+[rospy.core][INFO] 2022-02-09 14:53:04,390: signal_shutdown [atexit]

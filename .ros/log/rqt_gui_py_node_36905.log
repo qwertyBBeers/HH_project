@@ -1,0 +1,24 @@
+[rospy.client][INFO] 2022-02-09 14:28:27,648: init_node, name[/rqt_gui_py_node_36905], pid[36905]
+[xmlrpc][INFO] 2022-02-09 14:28:27,649: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2022-02-09 14:28:27,649: Started XML-RPC server [http://hh:42999/]
+[rospy.impl.masterslave][INFO] 2022-02-09 14:28:27,649: _ready: http://hh:42999/
+[rospy.init][INFO] 2022-02-09 14:28:27,649: ROS Slave URI: [http://hh:42999/]
+[rospy.registration][INFO] 2022-02-09 14:28:27,649: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2022-02-09 14:28:27,649: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2022-02-09 14:28:27,749: registered with master
+[rospy.rosout][INFO] 2022-02-09 14:28:27,750: initializing /rosout core topic
+[rospy.rosout][INFO] 2022-02-09 14:28:27,752: connected to core topic /rosout
+[rospy.simtime][INFO] 2022-02-09 14:28:27,753: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2022-02-09 14:28:27,995: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2022-02-09 14:29:35,117: topic[/turtle1/cmd_vel] adding connection to [/turtlesim], count 0
+[rospy.internal][INFO] 2022-02-09 14:33:32,112: topic[/turtle1/cmd_vel] adding connection to [/turtlesim], count 1
+[rospy.internal][INFO] 2022-02-09 14:33:32,112: topic[/turtle1/cmd_vel] removing connection to /turtlesim
+[rospy.internal][INFO] 2022-02-09 14:33:45,534: topic[/turtle1/cmd_vel] adding connection to [/turtlesim], count 1
+[rospy.internal][INFO] 2022-02-09 14:33:45,534: topic[/turtle1/cmd_vel] removing connection to /turtlesim
+[rospy.internal][INFO] 2022-02-09 14:45:17,531: topic[/turtle1/cmd_vel] adding connection to [/another_node], count 1
+[rospy.internal][INFO] 2022-02-09 14:45:57,343: topic impl's ref count is zero, deleting topic /turtle1/cmd_vel...
+[rospy.internal][INFO] 2022-02-09 14:45:57,343: topic[/turtle1/cmd_vel] removing connection to /turtlesim
+[rospy.internal][INFO] 2022-02-09 14:45:57,343: topic[/turtle1/cmd_vel] removing connection to /another_node
+[rospy.core][INFO] 2022-02-09 14:45:57,383: signal_shutdown [atexit]
+[rospy.internal][INFO] 2022-02-09 14:45:57,385: topic[/rosout] removing connection to /rosout
+[rospy.impl.masterslave][INFO] 2022-02-09 14:45:57,385: atexit

@@ -1,0 +1,26 @@
+[Data Source]
+DisplayName=내 할 일 목록
+Enabled=true
+Parent=a8562fa95d8cbdcd60164b90e47b1e59ff9b7e84
+
+[Authentication]
+Host=www.google.com
+Method=OAuth2
+Port=0
+ProxyUid=system-proxy
+RememberPassword=true
+User=gudgh1630@gmail.com
+CredentialName=
+IsExternal=false
+
+[Resource]
+Identity=gtasks::MDI3ODIzODUxNzA2NzI4MjQwNDI6MDow
+
+[Alarms]
+IncludeMe=false
+LastNotified=
+
+[Task List]
+BackendName=gtasks
+Color=#becedd
+Selected=true

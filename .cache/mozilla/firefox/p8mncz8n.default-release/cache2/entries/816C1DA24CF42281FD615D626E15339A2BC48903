@@ -1,0 +1,381 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+
+<meta name="google-site-verification" content="CjkdY6BqKWAVmQ78_iSq6J7ZZ9AoL7-CjFVBYGg9FU4" />
+<link rel="shortcut icon" href="/custom/favicon.ico" type="image/ico" />
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/custom/js/sorttable.js"></script>
+<script type="text/javascript" src="/custom/libraries/jquery.min.js"></script>                         
+<script type="text/javascript" src="/custom/js/seesaw.js"></script> 
+<script type="text/javascript" src="/custom/js/rosversion.js"></script> 
+<!--script type="text/javascript" src="/custom/libraries/RGraph.common.core.js" ></script Used for metrics only, should be conditional, not at the top-->
+<!--script type="text/javascript" src="/custom/libraries/RGraph.bar.js" ></script same as above -->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17821189-2']);
+  _gaq.push(['_setDomainName', 'wiki.ros.org']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="robots" content="index,nofollow">
+
+<title>ROS/NetworkSetup - ROS Wiki</title>
+<script type="text/javascript" src="/moin_static197/common/js/common.js"></script>
+
+<script type="text/javascript">
+<!--
+var search_hint = "Search";
+//-->
+</script>
+
+
+<link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/moin_static197/rostheme/css/common.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="/moin_static197/rostheme/css/screen.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="print" href="/moin_static197/rostheme/css/print.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="projection" href="/moin_static197/rostheme/css/projection.css">
+
+<!-- css only for MS IE6/IE7 browsers -->
+<!--[if lt IE 8]>
+   <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/moin_static197/rostheme/css/msie.css">
+<![endif]-->
+
+
+
+
+<link rel="canonical" href="http://wiki.ros.org/ROS/NetworkSetup" />
+
+<link rel="Start" href="/Documentation">
+<link rel="Alternate" title="Wiki Markup" href="/ROS/NetworkSetup?action=raw">
+<link rel="Alternate" media="print" title="Print View" href="/ROS/NetworkSetup?action=print">
+<link rel="Up" href="/ROS">
+<link rel="Search" href="/FindPage">
+<link rel="Index" href="/TitleIndex">
+<link rel="Glossary" href="/WordIndex">
+<link rel="Help" href="/HelpOnFormatting">
+</head>
+
+<body  lang="en" dir="ltr">
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-5950817-2");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<script type="text/javascript">
+<!--// Initialize search form
+var f = document.getElementById('searchform');
+if(f) f.getElementsByTagName('label')[0].style.display = 'none';
+var e = document.getElementById('searchinput');
+if(e) {
+  searchChange(e);
+  searchBlur(e);
+}
+
+function handleSubmit() {
+  var f = document.getElementById('searchform');
+  var t = document.getElementById('searchinput');
+  var r = document.getElementById('real_searchinput');
+
+  //alert("handleSubmit "+ t.value);
+  if(t.value.match(/review/)) {
+    r.value = t.value;
+  } else {
+    //r.value = t.value + " -PackageReviewCategory -StackReviewCategory -M3Review -DocReview -ApiReview -HelpOn -BadContent -LocalSpellingWords";
+    r.value = t.value + " -PackageReviewCategory -StackReviewCategory -DocReview -ApiReview";
+  }
+  //return validate(f);
+}
+//-->
+</script>
+
+<div id="dpage">
+  <div id="dpage-inner">
+    <div id="header"><div id="topnav">
+
+<!-- Alert box -->
+<!-- To enable/disable the alert box, uncomment/comment the block below and update the content below the button. -->
+<!--
+    <div class="alert alert-info alert-dismissable" style="text-align: center;">
+<script>
+jQuery(function( $ ){
+    alert_box_name = 'roswiki_roscon'
+    state = localStorage.getItem(alert_box_name);
+    if (!state) {
+      localStorage.setItem(alert_box_name, 'open');
+    }
+    state = localStorage.getItem(alert_box_name);
+    if (state == 'closed') {
+        $( '#topnav .alert' ).hide();
+    }
+    $( '.close' ).click(function () {
+	console.log('in .close.click');
+        localStorage.setItem(alert_box_name, 'closed');
+        $( '#topnav .alert' ).hide();
+  });
+});
+</script>
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <a href="http://roscon.ros.org">ROSCon 2017</a> will be in Vancouver, September 21-22! <br>
+      The last few years have sold out: register now and take advantage of discounted hotel rates</a>.
+    </div>
+-->
+<!-- End Alert box -->
+
+      <table id="topnav-table">
+        <tr>
+          <td width="300" valign="top"><a href="/"><img border="0" src="/custom/images/ros_org.png" alt="ros.org" width="238" height="51"/></a></td>
+          <td width="500" valign="middle">
+            <a href="http://www.ros.org/about-ros">About</a>
+            |
+            <a href="/Support">Support</a>
+            |
+            <a href="http://discourse.ros.org/">Discussion Forum</a>
+            |
+            <a href="http://status.ros.org/">Service Status</a>
+            |
+            <a href="http://answers.ros.org/">Q&A answers.ros.org</a>
+          </td>
+
+          <td valign="middle" align="right">
+
+<script language="Javascript">
+
+function Searchy(theButton){
+
+theForm = theButton.form;
+newID = theForm.input.value;
+theForm.q.value = newID;
+theForm.input.value=theForm.input.value
+
+}
+</script>
+
+
+<form action="https://www.ros.org/search/index.html" id="cse">
+  <div>
+    <label>Search:</label>
+    <input type="hidden" name="cx" value="005596761048178735851:_ejygd2ukbe" />
+    <input type="hidden" name="cof" value="FORID:11;NB:1" />
+    <input type="hidden" name="filter" value="0" />
+    <input type="hidden" name="num" value="10" />
+
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="input" id="input" autocomplete="on" style="width: 35%"/>
+    <input type="hidden" name="q" value="" />
+    <input type="submit" name="sa" value="Submit" onClick="Searchy(this)"/>
+
+  </div>
+</form>
+
+         </td>
+      </tr>
+      <tr>
+        <td colspan="3" height="53" width="1024"><nobr><img src="/custom/images/menu_left.png" width="17" height="53" alt=""/><a href="/"><img
+        border="0" src="/custom/images/menu_documentation.png" width="237" height="53" alt="Documentation" /></a><img
+        src="/custom/images/menu_spacer.png" width="69" height="53" /><a href="https://index.ros.org/packages"><img border="0"
+        src="/custom/images/menu_browse_software.png" width="268" height="53" alt="Browse Software" /></a><img
+        src="/custom/images/menu_spacer.png" width="69" height="53" /><a href="https://discourse.ros.org/c/general"><img border="0"
+        src="/custom/images/menu_news.png" width="84" height="53" alt="News" /></a><img
+        src="/custom/images/menu_spacer.png" width="69" height="53" /><a href="/ROS/Installation"><img border="0"
+        src="/custom/images/menu_download.png" width="151" height="53" alt="Download" /></a><img
+        src="/custom/images/menu_right.png" width="60" height="53" /></nobr></td>
+
+      </tr>
+    </table> <!-- topnav-table -->
+
+    </div> <!-- /#topav -->
+  </div> <!-- /#header -->
+
+
+<div id="header2">
+
+<ul id="pagelocation">
+<li><a href="/ROS">ROS</a></li><li><a class="backlink" href="/action/fullsearch/ROS/NetworkSetup?action=fullsearch&amp;context=180&amp;value=linkto%3A%22ROS%2FNetworkSetup%22" rel="nofollow" title="Click to do a full-text search for this title">NetworkSetup</a></li>
+</ul>
+
+<div id="locationline">
+</div>
+</div>
+
+<div id="sidebar">
+<h4>ROS 2 Documentation</h4><p>The ROS Wiki is for ROS 1. Are you using ROS 2 (Dashing/Foxy/Rolling)? <a href="http://docs.ros.org/en/rolling/">Check out the ROS 2 Documentation</a></p>
+<div class="sidepanel">
+<h1>Wiki</h1>
+
+<ul id="navibar">
+<li class="wikilink"><a href="/Distributions">Distributions</a></li><li class="wikilink"><a href="/ROS/Installation">ROS/Installation</a></li><li class="wikilink"><a href="/ROS/Tutorials">ROS/Tutorials</a></li><li class="wikilink"><a href="/RecentChanges">RecentChanges</a></li><li class="current"><a href="/ROS/NetworkSetup">ROS/NetworkSetup</a></li>
+</ul>
+
+</div>
+<div class="sidepanel">
+<h1>Page</h1>
+<ul class="editbar"><li><span class="disabled">Immutable Page</span></li><li class="toggleCommentsButton" style="display:none;"><a href="#" class="nbcomment" onClick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="/action/info/ROS/NetworkSetup?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="/action/AttachFile/ROS/NetworkSetup?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="/ROS/NetworkSetup">
+<div>
+    <label>More Actions:</label>
+    <select name="action"
+        onchange="if ((this.selectedIndex != 0) &&
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="RenderAsDocbook">Render as Docbook</option>
+<option value="show" disabled class="disabled">Delete Cache</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="RenamePage" disabled class="disabled">Rename Page</option>
+<option value="CopyPage">Copy Page</option>
+<option value="DeletePage" disabled class="disabled">Delete Page</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="MyPages">My Pages</option>
+<option value="show" disabled class="disabled">Subscribe User</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">Remove Spam</option>
+<option value="show" disabled class="disabled">Revert to this revision</option>
+<option value="PackagePages">Package Pages</option>
+<option value="SyncPages">Sync Pages</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="CreatePdfDocument">CreatePdfDocument</option>
+<option value="Load">Load</option>
+<option value="RawFile">RawFile</option>
+<option value="Save">Save</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    <input type="submit" value="Do">
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+</div>
+<div class="sidepanel">
+<h1>User</h1>
+<ul id="username"><li><a href="/action/login/ROS/NetworkSetup?action=login" id="login" rel="nofollow">Login</a></li></ul>
+</div>
+</div>
+
+<div id="page" lang="en" dir="ltr">
+
+<div dir="ltr" id="content" lang="en"><span class="anchor" id="top"></span>
+<span class="anchor" id="line-1"></span><p class="line867"><div class="table-of-contents"><p class="table-of-contents-heading">Contents<ol><li>
+<a href="#Full_connectivity">Full connectivity</a><ol><li>
+<a href="#Basic_check_1:_self_ping">Basic check 1: self ping</a></li><li>
+<a href="#Basic_check_2:_ping_between_machines">Basic check 2: ping between machines</a></li><li>
+<a href="#Further_check:_netcat">Further check: netcat</a></li></ol></li><li>
+<a href="#Name_resolution">Name resolution</a><ol><li>
+<a href="#Setting_a_name_explicitly">Setting a name explicitly</a></li><li>
+<a href="#Single_machine_configuration">Single machine configuration</a></li><li>
+<a href="#Configuring_.2Fetc.2Fhosts">Configuring /etc/hosts</a></li><li>
+<a href="#Using_machinename.local">Using machinename.local</a></li></ol></li><li>
+<a href="#What_about_firewalls.3F">What about firewalls?</a></li><li>
+<a href="#Debugging_network_problems">Debugging network problems</a></li><li>
+<a href="#Timing_issues.2C_TF_complaining_about_extrapolation_into_the_future.3F">Timing issues, TF complaining about extrapolation into the future?</a></li></ol></li></ol></div><p class="line874"> <span class="anchor" id="line-2"></span><span class="anchor" id="line-3"></span><p class="line874">ROS is a distributed computing environment.  A running ROS system can comprise dozens, even hundreds of nodes, spread across multiple machines. Depending on how the system is configured, any node may need to communicate with any other node, at any time. <span class="anchor" id="line-4"></span><span class="anchor" id="line-5"></span><p class="line874">As a result, ROS has certain requirements of the network configuration: <span class="anchor" id="line-6"></span><span class="anchor" id="line-7"></span><ul><li>There must be complete, bi-directional connectivity between all pairs of machines, on all ports. <span class="anchor" id="line-8"></span></li><li>Each machine must advertise itself by a name that all other machines can resolve. <span class="anchor" id="line-9"></span><span class="anchor" id="line-10"></span></li></ul><p class="line874">In the following sections, we'll assume that you want to run a ROS system on two machines, with the following hostnames and IP addresses: <span class="anchor" id="line-11"></span><span class="anchor" id="line-12"></span><ul><li>marvin.example.com : 192.168.1.1 <span class="anchor" id="line-13"></span></li><li>hal.example.com : 192.168.1.2 <span class="anchor" id="line-14"></span><span class="anchor" id="line-15"></span></li></ul><p class="line862">Note that you only need to run one master; see <a href="/ROS/Tutorials/MultipleMachines">ROS/Tutorials/MultipleMachines</a>. <span class="anchor" id="line-16"></span><span class="anchor" id="line-17"></span><p class="line867">
+<h2 id="Full_connectivity">Full connectivity</h2>
+<span class="anchor" id="line-18"></span><p class="line862">First of all, <strong>hal</strong> and <strong>marvin</strong> need full bi-directional connectivity, on all ports. <span class="anchor" id="line-19"></span><span class="anchor" id="line-20"></span><p class="line867">
+<h3 id="Basic_check_1:_self_ping">Basic check 1: self ping</h3>
+<span class="anchor" id="line-21"></span><p class="line862">You can check for basic connectivity with <tt class="backtick">ping</tt>. <span class="anchor" id="line-22"></span><span class="anchor" id="line-23"></span><p class="line862">Try to ping each machine from itself, i.e. ping <strong>hal</strong> from <strong>hal</strong>: <span class="anchor" id="line-24"></span><span class="anchor" id="line-25"></span><p class="line867"><span class="anchor" id="line-26"></span><span class="anchor" id="line-27"></span><span class="anchor" id="line-28"></span><pre><span class="anchor" id="line-1-1"></span>ssh hal
+<span class="anchor" id="line-2-1"></span>ping hal</pre><span class="anchor" id="line-29"></span><p class="line867"><img alt="/!\" height="15" src="/moin_static197/rostheme/img/alert.png" title="/!\" width="15" /> <em>Problem: cannot ping hal: this means that hal is not configured properly.</em> <span class="anchor" id="line-30"></span><span class="anchor" id="line-31"></span><ul><li style="list-style-type:none">See "Name Resolution" section below. <span class="anchor" id="line-32"></span><span class="anchor" id="line-33"></span></li></ul><p class="line867">
+<h3 id="Basic_check_2:_ping_between_machines">Basic check 2: ping between machines</h3>
+<span class="anchor" id="line-34"></span><p class="line862">Ping <strong>marvin</strong> from <strong>hal</strong>: <span class="anchor" id="line-35"></span><span class="anchor" id="line-36"></span><p class="line867"><span class="anchor" id="line-37"></span><span class="anchor" id="line-38"></span><span class="anchor" id="line-39"></span><pre><span class="anchor" id="line-1-2"></span>ssh hal
+<span class="anchor" id="line-2-2"></span>ping marvin</pre><span class="anchor" id="line-40"></span><p class="line874">You should see something like: <span class="anchor" id="line-41"></span><span class="anchor" id="line-42"></span><p class="line867"><span class="anchor" id="line-43"></span><span class="anchor" id="line-44"></span><span class="anchor" id="line-45"></span><span class="anchor" id="line-46"></span><span class="anchor" id="line-47"></span><pre><span class="anchor" id="line-1-3"></span>PING marvin.example.com (192.168.1.1): 56 data bytes
+<span class="anchor" id="line-2-3"></span>64 bytes from 192.168.1.1: icmp_seq=0 ttl=63 time=1.868 ms
+<span class="anchor" id="line-3-1"></span>64 bytes from 192.168.1.1: icmp_seq=1 ttl=63 time=2.677 ms
+<span class="anchor" id="line-4-1"></span>64 bytes from 192.168.1.1: icmp_seq=2 ttl=63 time=1.659 ms</pre><span class="anchor" id="line-48"></span><p class="line862">Also try pinging <strong>hal</strong> from <strong>marvin</strong>: <span class="anchor" id="line-49"></span><span class="anchor" id="line-50"></span><p class="line867"><span class="anchor" id="line-51"></span><span class="anchor" id="line-52"></span><span class="anchor" id="line-53"></span><pre><span class="anchor" id="line-1-4"></span>ssh marvin
+<span class="anchor" id="line-2-4"></span>ping hal</pre><span class="anchor" id="line-54"></span><p class="line867"><img alt="/!\" height="15" src="/moin_static197/rostheme/img/alert.png" title="/!\" width="15" /> <em>Problem: cannot ping each other.  This means that your machines cannot see each other.</em> <span class="anchor" id="line-55"></span><span class="anchor" id="line-56"></span><ul><li style="list-style-type:none">Additional check: try pinging the IP address instead of the hostname.  If this does not work, your machines are not on the same network and you will need to reconfigure your network. If the additional check passes, see "Name Resolution" below. <span class="anchor" id="line-57"></span><span class="anchor" id="line-58"></span></li></ul><p class="line867">
+<h3 id="Further_check:_netcat">Further check: netcat</h3>
+<span class="anchor" id="line-59"></span><p class="line867"><tt class="backtick">ping</tt> only checks that ICMP packets can get between the machines, which isn't enough.  You need to make sure that you can communicate over all ports.  This is difficult to check completely, because you'd have to iterate over approximately 65K ports. <span class="anchor" id="line-60"></span><span class="anchor" id="line-61"></span><p class="line862">In lieu of a complete check, you can use <tt class="backtick">netcat</tt> to try communicating over an arbitrarily selected port.  Be sure to pick a port greater than 1024; ports below 1024 require superuser privileges. Note that the <tt class="backtick">netcat</tt> executable may be named <tt class="backtick">nc</tt> on some distributions. <span class="anchor" id="line-62"></span><span class="anchor" id="line-63"></span><p class="line862">First try communicating from <strong>hal</strong> to <strong>marvin</strong>.  Start <tt class="backtick">netcat</tt> listening on <strong>marvin</strong>: <span class="anchor" id="line-64"></span><span class="anchor" id="line-65"></span><p class="line867"><span class="anchor" id="line-66"></span><span class="anchor" id="line-67"></span><span class="anchor" id="line-68"></span><pre><span class="anchor" id="line-1-5"></span>ssh marvin
+<span class="anchor" id="line-2-5"></span>netcat -l 1234</pre><span class="anchor" id="line-69"></span><p class="line862">Then connect from <strong>hal</strong>: <span class="anchor" id="line-70"></span><span class="anchor" id="line-71"></span><p class="line867"><span class="anchor" id="line-72"></span><span class="anchor" id="line-73"></span><span class="anchor" id="line-74"></span><pre><span class="anchor" id="line-1-6"></span>ssh hal
+<span class="anchor" id="line-2-6"></span>netcat marvin 1234</pre><span class="anchor" id="line-75"></span><p class="line874">If the connection is successful, you will be able to type back and forth between the two consoles, like an old-fashioned chat program. <span class="anchor" id="line-76"></span><span class="anchor" id="line-77"></span><p class="line862">Now try it the other direction.  Start <tt class="backtick">netcat</tt> listening on <strong>hal</strong>: <span class="anchor" id="line-78"></span><span class="anchor" id="line-79"></span><p class="line867"><span class="anchor" id="line-80"></span><span class="anchor" id="line-81"></span><span class="anchor" id="line-82"></span><pre><span class="anchor" id="line-1-7"></span>ssh hal
+<span class="anchor" id="line-2-7"></span>netcat -l 1234</pre><span class="anchor" id="line-83"></span><p class="line862">Then connect from <strong>marvin</strong>: <span class="anchor" id="line-84"></span><span class="anchor" id="line-85"></span><p class="line867"><span class="anchor" id="line-86"></span><span class="anchor" id="line-87"></span><span class="anchor" id="line-88"></span><pre><span class="anchor" id="line-1-8"></span>ssh marvin
+<span class="anchor" id="line-2-8"></span>netcat hal 1234</pre><span class="anchor" id="line-89"></span><p class="line867">
+<h2 id="Name_resolution">Name resolution</h2>
+<span class="anchor" id="line-90"></span><p class="line862">When a ROS node advertises a topic, it provides a hostname:port combination (a URI) that other nodes will contact when they want to subscribe to that topic.  It is important that the hostname that a node provides can be used by all other nodes to contact it.  The ROS client libraries use the name that the machine reports to be its hostname.  This is the name that is returned by the command <tt class="backtick">hostname</tt>. <span class="anchor" id="line-91"></span><span class="anchor" id="line-92"></span><p class="line867">
+<h3 id="Setting_a_name_explicitly">Setting a name explicitly</h3>
+<span class="anchor" id="line-93"></span><p class="line862">If a machine reports a hostname that is not addressable by other machines, then you need to set either the <tt class="backtick">ROS_IP</tt> or <tt class="backtick">ROS_HOSTNAME</tt> environment variables (<a href="/ROS/EnvironmentVariables#ROS_IP.2BAC8-ROS_HOSTNAME">more</a>). <span class="anchor" id="line-94"></span><span class="anchor" id="line-95"></span><p class="line867">
+<h4 id="Example">Example</h4>
+<span class="anchor" id="line-96"></span><p class="line862">Continuing the example of <strong>marvin</strong> and <strong>hal</strong>, say we want to bring in a third machine.  The new machine, named <strong>artoo</strong>, uses a DHCP address, say 10.0.0.1, and other machines cannot resolve the hostname <strong>artoo</strong> into an IP address (this should not happen on a properly configured DHCP-managed network, but it is a common problem). <span class="anchor" id="line-97"></span><span class="anchor" id="line-98"></span><p class="line862">In this situation, neither <strong>marvin</strong> nor <strong>hal</strong> are able to <tt class="backtick">ping</tt> <strong>artoo</strong> by name, and so they would not be able to contact nodes that advertise themselves as running on <strong>artoo</strong>.  The fix is to set <tt class="backtick">ROS_IP</tt> in the environment before starting a node on <strong>artoo</strong>: <span class="anchor" id="line-99"></span><span class="anchor" id="line-100"></span><p class="line867"><span class="anchor" id="line-101"></span><span class="anchor" id="line-102"></span><span class="anchor" id="line-103"></span><span class="anchor" id="line-104"></span><pre><span class="anchor" id="line-1-9"></span>ssh 10.0.0.1 # We can't ssh to artoo by name
+<span class="anchor" id="line-2-9"></span>export ROS_IP=10.0.0.1 # Correct the fact that artoo's address can't be resolved
+<span class="anchor" id="line-3-2"></span>&lt;start a node here&gt;</pre><span class="anchor" id="line-105"></span><p class="line862">A similar problem can occur if a machine's name is resolvable, but the machine doesn't know its own name.  Say <strong>artoo</strong> can be properly resolved into 10.0.0.1, but running <tt class="backtick">hostname</tt> on <strong>artoo</strong> returns <strong>localhost</strong>.  Then you should set <tt class="backtick">ROS_HOSTNAME</tt>: <span class="anchor" id="line-106"></span><span class="anchor" id="line-107"></span><p class="line867"><span class="anchor" id="line-108"></span><span class="anchor" id="line-109"></span><span class="anchor" id="line-110"></span><span class="anchor" id="line-111"></span><pre><span class="anchor" id="line-1-10"></span>ssh artoo # We can ssh to artoo by name
+<span class="anchor" id="line-2-10"></span>export ROS_HOSTNAME=10.0.0.1 # Correct the fact that artoo doesn't know its name
+<span class="anchor" id="line-3-3"></span>&lt;start a node here&gt;</pre><span class="anchor" id="line-112"></span><p class="line867">
+<h3 id="Single_machine_configuration">Single machine configuration</h3>
+<span class="anchor" id="line-113"></span><p class="line862">If you just want to run tests on your local machine (like to run the <a class="http" href="http://www.ros.org/wiki/ROS/Tutorials">ROS Tutorials</a>), set these environment variables: <span class="anchor" id="line-114"></span><span class="anchor" id="line-115"></span><p class="line867"><span class="anchor" id="line-116"></span><span class="anchor" id="line-117"></span><span class="anchor" id="line-118"></span><pre><span class="anchor" id="line-1-11"></span>$ export ROS_HOSTNAME=localhost
+<span class="anchor" id="line-2-11"></span>$ export ROS_MASTER_URI=http://localhost:11311</pre><span class="anchor" id="line-119"></span><p class="line862">Then <tt class="backtick">roscore</tt> should initialize correctly. <span class="anchor" id="line-120"></span><span class="anchor" id="line-121"></span><p class="line867">
+<h3 id="Configuring_.2Fetc.2Fhosts">Configuring /etc/hosts</h3>
+<span class="anchor" id="line-122"></span><p class="line862">Another option is to add entries to your <tt class="backtick">/etc/hosts</tt> file so that the machines can find each other.  The hosts file tells each machine how to convert specific names into an IP address. <span class="anchor" id="line-123"></span><span class="anchor" id="line-124"></span><p class="line862">For more information on the hosts file, please see <a class="http" href="http://www.faqs.org/docs/securing/chap9sec95.html">this external tutorial</a>. <span class="anchor" id="line-125"></span><span class="anchor" id="line-126"></span><p class="line867">
+<h3 id="Using_machinename.local">Using machinename.local</h3>
+<span class="anchor" id="line-127"></span><p class="line874">Another way to set ROS_HOSTNAME is to use .local domain <span class="anchor" id="line-128"></span><span class="anchor" id="line-129"></span><p class="line867"><span class="anchor" id="line-130"></span><span class="anchor" id="line-131"></span><span class="anchor" id="line-132"></span><pre><span class="anchor" id="line-1-12"></span>$ export ROS_HOSTNAME=ubuntu.local
+<span class="anchor" id="line-2-12"></span>$ export ROS_MASTER_URI=http://ubuntu.local:11311</pre><span class="anchor" id="line-133"></span><p class="line874">This is useful when  you have a Ubuntu system named ‚Äúubuntu‚Äù on your network, it can be accessed at the address ‚Äúubuntu.local‚Äù. To do this, Avahi automatically takes over all DNS requests ending with ".local" and prevents them from resolving normally. <span class="anchor" id="line-134"></span><span class="anchor" id="line-135"></span><p class="line874">Sometimes, system is unable to resolve to .local domain. When you encounter such issue, apart from following diagnostics mentioned above, check whether your avahi service is running. <span class="anchor" id="line-136"></span><span class="anchor" id="line-137"></span><p class="line867"><span class="anchor" id="line-138"></span><span class="anchor" id="line-139"></span><pre><span class="anchor" id="line-1-13"></span>$  systemctl is-active avahi-daemon.service</pre><span class="anchor" id="line-140"></span><p class="line874">If required, you can restart avahi service as follows: <span class="anchor" id="line-141"></span><span class="anchor" id="line-142"></span><p class="line867"><span class="anchor" id="line-143"></span><span class="anchor" id="line-144"></span><pre><span class="anchor" id="line-1-14"></span>$  systemctl restart avahi-daemon.service</pre><span class="anchor" id="line-145"></span><p class="line867">
+<h2 id="What_about_firewalls.3F">What about firewalls?</h2>
+<span class="anchor" id="line-146"></span><p class="line862">If there is a firewall, or other obstruction, between a pair of machines that you want to use with ROS, you need to create a virtual network to connect them.  We recommend <a class="http" href="http://openvpn.net/">openvpn</a>. <span class="anchor" id="line-147"></span><span class="anchor" id="line-148"></span><p class="line867">
+<h2 id="Debugging_network_problems">Debugging network problems</h2>
+<span class="anchor" id="line-149"></span><p class="line862">Try <a href="/roswtf">roswtf</a> and <a href="/rqt_graph">rqt_graph</a>. <span class="anchor" id="line-150"></span><span class="anchor" id="line-151"></span><p class="line862">Also have a look at the <a href="/ROS/Troubleshooting">ROS/Troubleshooting</a> page for more information on common problems. <span class="anchor" id="line-152"></span><span class="anchor" id="line-153"></span><p class="line867">
+<h2 id="Timing_issues.2C_TF_complaining_about_extrapolation_into_the_future.3F">Timing issues, TF complaining about extrapolation into the future?</h2>
+<span class="anchor" id="line-154"></span><p class="line874">You may have a discrepancy in system times for various machines.  You can check one machine against another using <span class="anchor" id="line-155"></span><span class="anchor" id="line-156"></span><p class="line867"><span class="anchor" id="line-157"></span><span class="anchor" id="line-158"></span><pre><span class="anchor" id="line-1-15"></span>ntpdate -q other_computer_ip</pre><span class="anchor" id="line-159"></span><p class="line862">If there is a discrepancy, install chrony (for Ubuntu, <strong>sudo apt-get install chrony</strong>) and edit the chrony configuration file (<strong>/etc/chrony/chrony.conf</strong>) on one machine to add the other as a server.  For instance, on the PR2, computer c2 gets its time from c1 and thus has the following line: <span class="anchor" id="line-160"></span><span class="anchor" id="line-161"></span><p class="line867"><span class="anchor" id="line-162"></span><span class="anchor" id="line-163"></span><pre><span class="anchor" id="line-1-16"></span>server c1 minpoll 0 maxpoll 5 maxdelay .05</pre><span class="anchor" id="line-164"></span><p class="line874">That machine will then slowly move its time towards the server. If the discrepancy is enormous, you can make it match instantly using <span class="anchor" id="line-165"></span><span class="anchor" id="line-166"></span><p class="line867"><span class="anchor" id="line-167"></span><span class="anchor" id="line-168"></span><span class="anchor" id="line-169"></span><span class="anchor" id="line-170"></span><pre><span class="anchor" id="line-1-17"></span>/etc/init.d/chrony stop
+<span class="anchor" id="line-2-13"></span>ntpdate other_computer_ip
+<span class="anchor" id="line-3-4"></span>/etc/init.d/chrony start</pre><span class="anchor" id="line-171"></span><p class="line874">(as root) but large time jumps can cause problems, so this is not recommended unless necessary. <span class="anchor" id="line-172"></span><span class="anchor" id="line-173"></span><p class="line862">If you are using wifi and are not getting any synchronisation try to set maxdelay higher (<a class="http" href="http://chrony.tuxfamily.org/manual.html#server">should be bigger than the expected round-trip delay</a>). For isolated networks look <a class="http" href="http://chrony.tuxfamily.org/manual.html#Isolated-networks">here</a>. <span class="anchor" id="line-174"></span><span class="anchor" id="bottom"></span></div></div>
+<div id="pagebottom"></div>
+</div>
+
+<p id="pageinfo" class="info" lang="en" dir="ltr">Wiki: ROS/NetworkSetup  (last edited 2018-08-08 09:08:07 by <span title="Rahul Bhadani @ ip24-255-24-241.tc.ph.cox.net[24.255.24.241]"><a class="nonexistent" href="/Rahul%20Bhadani" title="Rahul Bhadani @ ip24-255-24-241.tc.ph.cox.net[24.255.24.241]">Rahul Bhadani</a></span>)</p>
+
+
+
+
+<div style="margin-top: 9px;" class="footer">
+Except where otherwise noted, the ROS wiki is licensed under the <br /><a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>
+<hr style="margin-top: 10px;">
+<div class="row">
+  <div class="col-md-4 col-md-offset-4">
+<a href="https://www.openrobotics.org/"><img style="margin-top: -1px;" src="/custom/images/brought_by_horiz.png"></p></a>
+  </div>
+</div>
+</div>
+
+  </div></div> <!-- /#dpage-inner, /#dpage -->
+
+
+</body>
+</html>
+
+ÿÔáó√      bi¶bißC
+æbiß   K    O^partitionKey=%28https%2Cros.org%29,:https://wiki.ros.org/ROS/NetworkSetup necko:classified 1 strongly-framed 1 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAAAAgAAAAAAAAAAAAAAAAAAAAEANgFmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAAUhMIIFHTCCBAWgAwIBAgISA99HQjPUh7gE81hkK8yLbEvzMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yMTEyMzAwMDMyMzFaFw0yMjAzMzAwMDMyMzBaMBcxFTATBgNVBAMTDHdpa2kucm9zLm9yZzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALsDLK+N9FqVc5Q4I4Q636vCEDELTipSZkwWoaCUGmf1+tkEZDpynSHQYrljeU7GbERDy7TYVs/+zmwCm5rN3YI1xq9OnxG0ojV6RM/PrU6FUWSZBSSXbvhMIFnh9Y3u+7OWaOKcIykeQTj27Yk/Y/TBldYsxp9IvzuwJ/8FdrAVTnAjtAqmFbVMaZgaXIiXEgtEgAJXDlBiIOjqYCAiB+tJ2pMY8nW/lPXqfgwjvuETERU7oozDqjgYIEVOnw5GmPa6oV7fUOnb3wyBhHjRFQ/ra6cdX1BhEox5nUT1sXo1d1RN/w++7Xb4tWyCwLCndIcUgwyv8g8CNB1Aniwlkq0CAwEAAaOCAkYwggJCMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUE2+aUXOhVjps9TGCctM2wwNGquMwHwYDVR0jBBgwFoAUFC6zF7dYVsuuUAlA5h+vnYsUwsYwVQYIKwYBBQUHAQEESTBHMCEGCCsGAQUFBzABhhVodHRwOi8vcjMuby5sZW5jci5vcmcwIgYIKwYBBQUHMAKGFmh0dHA6Ly9yMy5pLmxlbmNyLm9yZy8wFwYDVR0RBBAwDoIMd2lraS5yb3Mub3JnMEwGA1UdIARFMEMwCAYGZ4EMAQIBMDcGCysGAQQBgt8TAQEBMCgwJgYIKwYBBQUHAgEWGmh0dHA6Ly9jcHMubGV0c2VuY3J5cHQub3JnMIIBAwYKKwYBBAHWeQIEAgSB9ASB8QDvAHYA36Veq2iCTx9sre64X04+WurNohKkal6OOxLAIERcKnMAAAF+CPebYQAABAMARzBFAiEAg6bB57aLPWZP5xioolG/57wwh4JL7Z8O2c3w3GuXr10CIAP8kziHFRp/a8Jphaiij4/5Jt1o68WOnFr0WB1u4+2kAHUARqVV63X6kSAwtaKJafTzfREsQXS+/Um4havy/HD+bUcAAAF+CPebiQAABAMARjBEAiAvSyRumQMuNE+vQtM0WJz6C3Ap0TOY76LVA28qNUk1bAIgPXNFahGTWNTHKwBiuZG8DptK1Q+avUR0iyrhTvbg58EwDQYJKoZIhvcNAQELBQADggEBAGlrUHvYluibQL9x6MFMIC7QT2Sa4qTDR4jzZa8Yofx5fhQBBsH0Zz4NvegO2O3YPSF+mKad91/bwiCzKntd3F5R/s9NiF9gxVsOEhyI068Ev7j2MPEuGXopPdFW4FVKW9MyqXDbTin0eLCwAoIn1BKjU/nE+TuP7yBfKCjYYVORm8U1iB8EG88erzWgvYrIZklnK1qkhRY0E8UnlqbJO1heTJg6bpSR8EKxuhJt/3QAcf9poF+KEE1r27NUjwVVwW3xUvn3N+q5WnSbHURI+IjJA/FDX4jADZqVKedGZ/CMim7EsHCfEoXSckJzkpAqAD9pr1q9OY9q04GpfnO7l1fALwADAAAAAAEBAAAAAAAABFAyNTYAAAAQUlNBLVBLQ1MxLVNIQTUxMgADZgoyJpFcT/u7IImFpjLfBb3Dl5pUIkzVhYlpa26W6oMAAAAAAAAFITCCBR0wggQFoAMCAQICEgPfR0Iz1Ie4BPNYZCvMi2xL8zANBgkqhkiG9w0BAQsFADAyMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNTGV0J3MgRW5jcnlwdDELMAkGA1UEAxMCUjMwHhcNMjExMjMwMDAzMjMxWhcNMjIwMzMwMDAzMjMwWjAXMRUwEwYDVQQDEwx3aWtpLnJvcy5vcmcwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC7AyyvjfRalXOUOCOEOt+rwhAxC04qUmZMFqGglBpn9frZBGQ6cp0h0GK5Y3lOxmxEQ8u02FbP/s5sApuazd2CNcavTp8RtKI1ekTPz61OhVFkmQUkl274TCBZ4fWN7vuzlmjinCMpHkE49u2JP2P0wZXWLMafSL87sCf/BXawFU5wI7QKphW1TGmYGlyIlxILRIACVw5QYiDo6mAgIgfrSdqTGPJ1v5T16n4MI77hExEVO6KMw6o4GCBFTp8ORpj2uqFe31Dp298MgYR40RUP62unHV9QYRKMeZ1E9bF6NXdUTf8Pvu12+LVsgsCwp3SHFIMMr/IPAjQdQJ4sJZKtAgMBAAGjggJGMIICQjAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFBNvmlFzoVY6bPUxgnLTNsMDRqrjMB8GA1UdIwQYMBaAFBQusxe3WFbLrlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5vcmcvMBcGA1UdEQQQMA6CDHdpa2kucm9zLm9yZzBMBgNVHSAERTBDMAgGBmeBDAECATA3BgsrBgEEAYLfEwEBATAoMCYGCCsGAQUFBwIBFhpodHRwOi8vY3BzLmxldHNlbmNyeXB0Lm9yZzCCAQMGCisGAQQB1nkCBAIEgfQEgfEA7wB2AN+lXqtogk8fbK3uuF9OPlrqzaISpGpejjsSwCBEXCpzAAABfgj3m2EAAAQDAEcwRQIhAIOmwee2iz1mT+cYqKJRv+e8MIeCS+2fDtnN8Nxrl69dAiAD/JM4hxUaf2vCaYWooo+P+SbdaOvFjpxa9FgdbuPtpAB1AEalVet1+pEgMLWiiWn0830RLEF0vv1JuIWr8vxw/m1HAAABfgj3m4kAAAQDAEYwRAIgL0skbpkDLjRPr0LTNFic+gtwKdEzmO+i1QNvKjVJNWwCID1zRWoRk1jUxysAYrmRvA6bStUPmr1EdIsq4U724OfBMA0GCSqGSIb3DQEBCwUAA4IBAQBpa1B72Jbom0C/cejBTCAu0E9kmuKkw0eI82WvGKH8eX4UAQbB9Gc+Db3oDtjt2D0hfpimnfdf28Igsyp7XdxeUf7PTYhfYMVbDhIciNOvBL+49jDxLhl6KT3RVuBVSlvTMqlw204p9HiwsAKCJ9QSo1P5xPk7j+8gXygo2GFTkZvFNYgfBBvPHq81oL2KyGZJZytapIUWNBPFJ5amyTtYXkyYOm6UkfBCsboSbf90AHH/aaBfihBNa9uzVI8FVcFt8VL59zfquVp0mx1ESPiIyQPxQ1+IwA2alSnnRmfwjIpuxLBwnxKF0nJCc5KQKgA/aa9avTmPatOBqX5zu5dXZgoyJpFcT/u7IImFpjLfBb3Dl5pUIkzVhYlpa26W6oMAAAAAAAAFGjCCBRYwggL+oAMCAQICEQCRKwhKzwwYp1P21i4lp19aMA0GCSqGSIb3DQEBCwUAME8xCzAJBgNVBAYTAlVTMSkwJwYDVQQKEyBJbnRlcm5ldCBTZWN1cml0eSBSZXNlYXJjaCBHcm91cDEVMBMGA1UEAxMMSVNSRyBSb290IFgxMB4XDTIwMDkwNDAwMDAwMFoXDTI1MDkxNTE2MDAwMFowMjELMAkGA1UEBhMCVVMxFjAUBgNVBAoTDUxldCdzIEVuY3J5cHQxCzAJBgNVBAMTAlIzMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuwIVKMz2oJTTDxLsjVWSw/iC8ZmmekKIp10mqrUrucVMsa+Oa/l1yKPXD0eUFFU1V4yeqKI5GfWCPEKpTm71O8Mu243AsFzzWTjn7c9p8FoLG77AlCQlh/o3cbMT5xys4Zvv2+Q7RVJFlqnBU840yFLuta7tj95gcOKlVKu2bQ6XpUA0ayvTvGbrZjR8+muLj1cpmfgwF126cm/7gcWt0oZYPRfH5wm78Sv3htzB2nFd1EbjzK0lwYi8YGd1ZrPxGPeiXOZT/zqItkel/xMY6pgJdz+dU/nPAeX1pnAXFK9jpP+Zs5Od3FOnBv5IhR2haa4ldbsTzFID9e1RoYvbFQIDAQABo4IBCDCCAQQwDgYDVR0PAQH/BAQDAgGGMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDATASBgNVHRMBAf8ECDAGAQH/AgEAMB0GA1UdDgQWBBQULrMXt1hWy65QCUDmH6+dixTCxjAfBgNVHSMEGDAWgBR5tFnme7bl5AFzgAiIyBpY9umbbjAyBggrBgEFBQcBAQQmMCQwIgYIKwYBBQUHMAKGFmh0dHA6Ly94MS5pLmxlbmNyLm9yZy8wJwYDVR0fBCAwHjAcoBqgGIYWaHR0cDovL3gxLmMubGVuY3Iub3JnLzAiBgNVHSAEGzAZMAgGBmeBDAECATANBgsrBgEEAYLfEwEBATANBgkqhkiG9w0BAQsFAAOCAgEAhcpORz6j94VEhbzVZ3iymGOtdU0elj0zZXJULYGg6sPt+CC/X8y3cAC3bjv2XpTe5CCfpu+LsgPnorUWPJHOtO05Aud8JYpH5mVuP0b02fDOlCvuVM4SvIwnS7jBmC+ir81xkUoIt8i4I3sELQj5CFc+g9kEMwpHIXgJgifDKsibuc5c8mTIwL55wE+ObUQMXpK7LveLEOHoHUQp21kg7WO5IfgSJpSTV6AdZQTBCiKuEA1Dl6EYH37g4IY3tVqxvTC/h24rKv8hThsFw/UYl/BerMOluGrwLrw7M7nuS97M/OSvhAuGP8BVQzb2aOE2F2qOmdH/pUCnNLfA0GM5NTl1bvK6dsiTAumpS2wXzgwC2b2B+5+3aNQGZbOCPXdT+I55A60KMQd1KkPYVZdyxCkO98RdTsiuRoQw1/KFXxihebvnXnCLB+GGk8O5j9xhcSUqr9/tJVBSaIuS3OXWtePafdCHbIQhMa6C9fu5q8iJFz3hTOU4Dva9K72WgRTr1ds9IKd+WdPi+Fj5W7hIzf5cTxYp/h5VI6/IEbCN6nyTkBcv/ayiCUdGP/DpsLf/KE1oMtZnXh5po5O49Z2LLwvSUkOmbzJXZU0ygd84U4Vdfl1mKeq43eSVtc21VhJCzcROxiU4RFBt7M4AVRj+6Ulk1E7Kl5y0W8BzqKu4R8JmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAAVvMIIFazCCA1OgAwIBAgIRAIIQz7DSQONZRGPgu2OCiwAwDQYJKoZIhvcNAQELBQAwTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2VhcmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMTUwNjA0MTEwNDM4WhcNMzUwNjA0MTEwNDM4WjBPMQswCQYDVQQGEwJVUzEpMCcGA1UEChMgSW50ZXJuZXQgU2VjdXJpdHkgUmVzZWFyY2ggR3JvdXAxFTATBgNVBAMTDElTUkcgUm9vdCBYMTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAK3oJHP0FDfzm54rVygch77ct984kIxuPOZXoHj3dcKi/vVqbvYATyjb3miGbESTtrFj/RQSa78f0uoxmyF+0TM8ukj13Xnfs7j/EvEhmkvBioZxaUpmZmyPfjxwv60pIgbz5MDmgK7iS4+3mX6UA5/TR5d8mUgjU+g4rk8Kb4Mu0UlXjIB0ttov0DiNewNwIRt18jA8+o+u3dpjq+sWT8KOEUt+zwvo/7V3LvSye0rgTBIlDHCNAymg4VMk7BPZ7hm/ELNKjD+Jo2FR3qyHB5T0Y3HsLuJvW5iB4YlcNHlsdu87kGJ55tukmi8mxdAQ4Q7e2RCOFvu396j3x+UCB5iPNgiV5+I3lg02dZ77DnKxHZu8A/lJBdiB3QW0KtZB6awBdpUKD9jf1b0SHzUvKBds0pjBqAlkd25HN7rOrFleaJ1/ctaJxQZBKT5ZPt0m9STJEadao0xAH0ahmbWnOlFuhjuefXKnEgV4We0+UXgVCwOPjdAvBbI+e0ocS3MFEvzG6uBQE3xDk3SzynTnjh8BCNAw1FtxNrQHusEwMFxIt4I7mKZ9YIqioymCzLq9gwQbooMDQaHWBfEbwrbwqHyGO0aoSCqI3Haadr8faqU9GY/rOPNk3sgrDQoo//fb4hVC1CLQJ13hef4Y53CIrU7m2Ys6xt0nUW7/vGT1M0NPAgMBAAGjQjBAMA4GA1UdDwEB/wQEAwIBBjAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBR5tFnme7bl5AFzgAiIyBpY9umbbjANBgkqhkiG9w0BAQsFAAOCAgEAVR9YqbyyqFDQDLHYGmkgJykIrGF1XIpu+ILlaS/V9lZLubhzEFnTIZd+50xx+7LSYK05qAvqFyFWhfFQDlnrzuBZ6brJFe+GnY+EgPbk6ZGQ3BebYhtF8GaV0nxvwuo77x/Py9auJ/GpsMiu/X1+mvoiBOv/2X/qkSsisRcOj/KKNFtY2PwByVS5uCbMiogziUwthDyC3+6WVwW6LLv3xLfHTjuCvjHIInNzktHCgKQ5ORAzI4JMPJ+GslWYHb4phowim57iaztXOoJwTdwJx4nLCgdNbOhdjsnvzqvHu7UrTkXWStAmzOVyyghqpZXjFaH3pO3JLF+l+/+sKAIuvtd7u+Nxe5AW0wdeRlN8NwdCjNPElpzVmbUq4JUagEiuTDkHzsxHpFKVK7q4+63SM1N95R1NbdWhscdCb+ZAJzVcoyi3B43njTOQ5yOf+1CceWxG1bQVs5ZufpsMljq4Ui0/1lvh+wjChP4kqKOJ2qxq4RgqsahDYVvTH9w7jXbyLeiNdd8XM2w9U/t7y0Ff/9yi0GE44Za4rF2LN9d11TPAmRGunUHBcnWEvgJBQl9nJEiU0Zsnvgc/ubhPgXRR4Xq37Z0j4r7g1SgEEzwxA57demyPxgcYxn/eR44/KJ4EBs+lVDR3veyJm+kXQ99b21/+jh5Xos1AnX5iItreGCcAAAABAAAAAAABAA== request-method GET request-Cookie TgN8uO2HmwPLSE7PTn0lkVnwh80= request-User-Agent Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:91.0) Gecko/20100101 Firefox/91.0 request-Accept-Language en-US,en;q=0.5 response-head HTTP/1.1 200 OK
+Date: Wed, 09 Feb 2022 07:13:42 GMT
+Server: Apache
+Vary: Cookie,User-Agent,Accept-Language
+Content-Type: text/html; charset=utf-8
+ original-response-headers Date: Wed, 09 Feb 2022 07:13:42 GMT
+Server: Apache
+Vary: Cookie,User-Agent,Accept-Language
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=utf-8
+ ctid 1 uncompressed-len 0 net-response-time-onstart 822 net-response-time-onstop 984   Ñ

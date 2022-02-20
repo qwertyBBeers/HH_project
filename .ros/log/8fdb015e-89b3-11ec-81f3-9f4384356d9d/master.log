@@ -1,0 +1,335 @@
+[rosmaster.main][INFO] 2022-02-09 23:21:25,149: initialization complete, waiting for shutdown
+[rosmaster.main][INFO] 2022-02-09 23:21:25,149: Starting ROS Master Node
+[xmlrpc][INFO] 2022-02-09 23:21:25,150: XML-RPC server binding to 0.0.0.0:11311
+[xmlrpc][INFO] 2022-02-09 23:21:25,150: Started XML-RPC server [http://hh:11311/]
+[xmlrpc][INFO] 2022-02-09 23:21:25,150: xml rpc node: starting XML-RPC server
+[rosmaster.master][INFO] 2022-02-09 23:21:25,150: Master initialized: port[11311], uri[http://hh:11311/]
+[rosmaster.master][INFO] 2022-02-09 23:21:25,214: +PARAM [/run_id] by /roslaunch
+[rosmaster.master][INFO] 2022-02-09 23:21:25,215: +PARAM [/roslaunch/uris/host_hh__45733] by /roslaunch
+[rosmaster.master][INFO] 2022-02-09 23:21:25,243: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2022-02-09 23:21:25,243: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2022-02-09 23:21:25,250: +SERVICE [/rosout/get_loggers] /rosout http://hh:38425/
+[rosmaster.master][INFO] 2022-02-09 23:21:25,251: +SERVICE [/rosout/set_logger_level] /rosout http://hh:38425/
+[rosmaster.master][INFO] 2022-02-09 23:21:25,251: +PUB [/rosout_agg] /rosout http://hh:38425/
+[rosmaster.master][INFO] 2022-02-09 23:21:25,252: +SUB [/rosout] /rosout http://hh:38425/
+[rosmaster.master][INFO] 2022-02-09 23:21:29,584: +PUB [/rosout] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 23:21:29,584: +SERVICE [/turtlesim/get_loggers] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 23:21:29,585: +SERVICE [/turtlesim/set_logger_level] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 23:21:29,585: +PARAM [/turtlesim/background_r] by /turtlesim
+[rosmaster.master][INFO] 2022-02-09 23:21:29,586: +PARAM [/turtlesim/background_g] by /turtlesim
+[rosmaster.master][INFO] 2022-02-09 23:21:29,586: +PARAM [/turtlesim/background_b] by /turtlesim
+[rosmaster.master][INFO] 2022-02-09 23:21:29,594: +SERVICE [/clear] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 23:21:29,595: +SERVICE [/reset] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 23:21:29,595: +SERVICE [/spawn] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 23:21:29,595: +SERVICE [/kill] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 23:21:29,595: +CACHEDPARAM [/rosout_disable_topics_generation] by /turtlesim
+[rosmaster.master][INFO] 2022-02-09 23:21:29,596: +SUB [/turtle1/cmd_vel] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 23:21:29,596: +PUB [/turtle1/pose] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 23:21:29,597: +PUB [/turtle1/color_sensor] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 23:21:29,597: +SERVICE [/turtle1/set_pen] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 23:21:29,597: +SERVICE [/turtle1/teleport_relative] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 23:21:29,597: +SERVICE [/turtle1/teleport_absolute] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 23:21:29,657: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/']
+[rosmaster.master][INFO] 2022-02-09 23:21:29,660: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 23:22:25,833: +PUB [/rosout] /rqt_gui_py_node_36714 http://hh:41163/
+[rosmaster.master][INFO] 2022-02-09 23:22:25,837: +SERVICE [/rqt_gui_py_node_36714/get_loggers] /rqt_gui_py_node_36714 http://hh:41163/
+[rosmaster.master][INFO] 2022-02-09 23:22:25,838: +SERVICE [/rqt_gui_py_node_36714/set_logger_level] /rqt_gui_py_node_36714 http://hh:41163/
+[rosmaster.master][INFO] 2022-02-09 23:22:25,849: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:41163/']
+[rosmaster.master][INFO] 2022-02-09 23:22:25,850: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:41163/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 23:23:52,830: +PUB [/rosout] /teleop_turtle http://hh:44633/
+[rosmaster.master][INFO] 2022-02-09 23:23:52,830: +SERVICE [/teleop_turtle/get_loggers] /teleop_turtle http://hh:44633/
+[rosmaster.master][INFO] 2022-02-09 23:23:52,831: +SERVICE [/teleop_turtle/set_logger_level] /teleop_turtle http://hh:44633/
+[rosmaster.master][INFO] 2022-02-09 23:23:52,831: +PUB [/turtle1/cmd_vel] /teleop_turtle http://hh:44633/
+[rosmaster.master][INFO] 2022-02-09 23:23:52,907: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:41163/', 'http://hh:44633/']
+[rosmaster.master][INFO] 2022-02-09 23:23:52,907: publisherUpdate[/turtle1/cmd_vel] -> http://hh:46241/ ['http://hh:44633/']
+[rosmaster.master][INFO] 2022-02-09 23:23:52,909: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:41163/', 'http://hh:44633/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 23:23:52,910: publisherUpdate[/turtle1/cmd_vel] -> http://hh:46241/ ['http://hh:44633/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 23:25:30,718: +PUB [/rosout] /rosservice_36827_1644416730703 http://hh:41159/
+[rosmaster.master][INFO] 2022-02-09 23:25:30,720: +SERVICE [/rosservice_36827_1644416730703/get_loggers] /rosservice_36827_1644416730703 http://hh:41159/
+[rosmaster.master][INFO] 2022-02-09 23:25:30,720: +SERVICE [/rosservice_36827_1644416730703/set_logger_level] /rosservice_36827_1644416730703 http://hh:41159/
+[rosmaster.master][INFO] 2022-02-09 23:25:30,725: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:41163/', 'http://hh:44633/', 'http://hh:41159/']
+[rosmaster.master][INFO] 2022-02-09 23:25:30,726: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:41163/', 'http://hh:44633/', 'http://hh:41159/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 23:25:30,733: +CACHEDPARAM [/rosout/omit_topics] by /rosout
+[rosmaster.master][INFO] 2022-02-09 23:25:30,735: -PUB [/rosout] /rosservice_36827_1644416730703 http://hh:41159/
+[rosmaster.master][INFO] 2022-02-09 23:25:30,735: -SERVICE [/rosservice_36827_1644416730703/get_loggers] /rosservice_36827_1644416730703 rosrpc://hh:37985
+[rosmaster.master][INFO] 2022-02-09 23:25:30,735: -SERVICE [/rosservice_36827_1644416730703/set_logger_level] /rosservice_36827_1644416730703 rosrpc://hh:37985
+[rosmaster.master][INFO] 2022-02-09 23:25:30,774: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:41163/', 'http://hh:44633/']
+[rosmaster.master][INFO] 2022-02-09 23:25:30,775: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:41163/', 'http://hh:44633/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:28:24,772: -PUB [/rosout] /rqt_gui_py_node_36714 http://hh:41163/
+[rosmaster.master][INFO] 2022-02-09 14:28:24,772: -SERVICE [/rqt_gui_py_node_36714/get_loggers] /rqt_gui_py_node_36714 rosrpc://hh:34469
+[rosmaster.master][INFO] 2022-02-09 14:28:24,772: -SERVICE [/rqt_gui_py_node_36714/set_logger_level] /rqt_gui_py_node_36714 rosrpc://hh:34469
+[rosmaster.master][INFO] 2022-02-09 14:28:24,787: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/']
+[rosmaster.master][INFO] 2022-02-09 14:28:24,788: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:28:27,751: +PUB [/rosout] /rqt_gui_py_node_36905 http://hh:42999/
+[rosmaster.master][INFO] 2022-02-09 14:28:27,755: +SERVICE [/rqt_gui_py_node_36905/get_loggers] /rqt_gui_py_node_36905 http://hh:42999/
+[rosmaster.master][INFO] 2022-02-09 14:28:27,756: +SERVICE [/rqt_gui_py_node_36905/set_logger_level] /rqt_gui_py_node_36905 http://hh:42999/
+[rosmaster.master][INFO] 2022-02-09 14:28:27,792: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:42999/']
+[rosmaster.master][INFO] 2022-02-09 14:28:27,793: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:42999/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:29:34,911: +PUB [/turtle1/cmd_vel] /rqt_gui_py_node_36905 http://hh:42999/
+[rosmaster.master][INFO] 2022-02-09 14:29:34,913: publisherUpdate[/turtle1/cmd_vel] -> http://hh:46241/ ['http://hh:44633/', 'http://hh:42999/']
+[rosmaster.master][INFO] 2022-02-09 14:29:34,914: publisherUpdate[/turtle1/cmd_vel] -> http://hh:46241/ ['http://hh:44633/', 'http://hh:42999/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:33:14,898: +PUB [/rosout] /rosservice_37019_1644384794782 http://hh:34903/
+[rosmaster.master][INFO] 2022-02-09 14:33:14,901: +SERVICE [/rosservice_37019_1644384794782/get_loggers] /rosservice_37019_1644384794782 http://hh:34903/
+[rosmaster.master][INFO] 2022-02-09 14:33:14,903: +SERVICE [/rosservice_37019_1644384794782/set_logger_level] /rosservice_37019_1644384794782 http://hh:34903/
+[rosmaster.master][INFO] 2022-02-09 14:33:14,913: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:42999/', 'http://hh:34903/']
+[rosmaster.master][INFO] 2022-02-09 14:33:14,915: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:42999/', 'http://hh:34903/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:33:14,926: -PUB [/rosout] /rosservice_37019_1644384794782 http://hh:34903/
+[rosmaster.master][INFO] 2022-02-09 14:33:14,926: -SERVICE [/rosservice_37019_1644384794782/get_loggers] /rosservice_37019_1644384794782 rosrpc://hh:34173
+[rosmaster.master][INFO] 2022-02-09 14:33:14,927: -SERVICE [/rosservice_37019_1644384794782/set_logger_level] /rosservice_37019_1644384794782 rosrpc://hh:34173
+[rosmaster.master][INFO] 2022-02-09 14:33:14,931: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:42999/']
+[rosmaster.master][INFO] 2022-02-09 14:33:14,932: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:42999/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:33:31,965: +PUB [/rosout] /rosservice_37029_1644384811850 http://hh:35495/
+[rosmaster.master][INFO] 2022-02-09 14:33:31,969: +SERVICE [/rosservice_37029_1644384811850/get_loggers] /rosservice_37029_1644384811850 http://hh:35495/
+[rosmaster.master][INFO] 2022-02-09 14:33:31,971: +SERVICE [/rosservice_37029_1644384811850/set_logger_level] /rosservice_37029_1644384811850 http://hh:35495/
+[rosmaster.master][INFO] 2022-02-09 14:33:31,971: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:42999/', 'http://hh:35495/']
+[rosmaster.master][INFO] 2022-02-09 14:33:31,972: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:42999/', 'http://hh:35495/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:33:31,977: -SERVICE [/turtle1/teleport_absolute] /turtlesim rosrpc://hh:34333
+[rosmaster.master][INFO] 2022-02-09 14:33:31,978: -SERVICE [/turtle1/teleport_relative] /turtlesim rosrpc://hh:34333
+[rosmaster.master][INFO] 2022-02-09 14:33:31,978: -SERVICE [/turtle1/set_pen] /turtlesim rosrpc://hh:34333
+[rosmaster.master][INFO] 2022-02-09 14:33:31,979: -PUB [/turtle1/color_sensor] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 14:33:31,980: -PUB [/turtle1/pose] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 14:33:31,980: -SUB [/turtle1/cmd_vel] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 14:33:31,983: +SUB [/turtle1/cmd_vel] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 14:33:31,984: +PUB [/turtle1/pose] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 14:33:31,985: +PUB [/turtle1/color_sensor] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 14:33:31,986: +SERVICE [/turtle1/set_pen] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 14:33:31,986: +SERVICE [/turtle1/teleport_relative] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 14:33:31,987: +SERVICE [/turtle1/teleport_absolute] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 14:33:31,992: -PUB [/rosout] /rosservice_37029_1644384811850 http://hh:35495/
+[rosmaster.master][INFO] 2022-02-09 14:33:31,992: -SERVICE [/rosservice_37029_1644384811850/get_loggers] /rosservice_37029_1644384811850 rosrpc://hh:41459
+[rosmaster.master][INFO] 2022-02-09 14:33:31,992: -SERVICE [/rosservice_37029_1644384811850/set_logger_level] /rosservice_37029_1644384811850 rosrpc://hh:41459
+[rosmaster.master][INFO] 2022-02-09 14:33:32,045: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:42999/']
+[rosmaster.master][INFO] 2022-02-09 14:33:32,046: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:42999/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:33:45,342: +PUB [/rosout] /rosservice_37043_1644384825328 http://hh:41607/
+[rosmaster.master][INFO] 2022-02-09 14:33:45,343: +SERVICE [/rosservice_37043_1644384825328/get_loggers] /rosservice_37043_1644384825328 http://hh:41607/
+[rosmaster.master][INFO] 2022-02-09 14:33:45,344: +SERVICE [/rosservice_37043_1644384825328/set_logger_level] /rosservice_37043_1644384825328 http://hh:41607/
+[rosmaster.master][INFO] 2022-02-09 14:33:45,353: -SERVICE [/turtle1/teleport_absolute] /turtlesim rosrpc://hh:34333
+[rosmaster.master][INFO] 2022-02-09 14:33:45,353: -SERVICE [/turtle1/teleport_relative] /turtlesim rosrpc://hh:34333
+[rosmaster.master][INFO] 2022-02-09 14:33:45,353: -SERVICE [/turtle1/set_pen] /turtlesim rosrpc://hh:34333
+[rosmaster.master][INFO] 2022-02-09 14:33:45,353: -PUB [/turtle1/color_sensor] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 14:33:45,354: -PUB [/turtle1/pose] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 14:33:45,354: -SUB [/turtle1/cmd_vel] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 14:33:45,355: +SUB [/turtle1/cmd_vel] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 14:33:45,355: +PUB [/turtle1/pose] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 14:33:45,355: +PUB [/turtle1/color_sensor] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 14:33:45,355: +SERVICE [/turtle1/set_pen] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 14:33:45,356: +SERVICE [/turtle1/teleport_relative] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 14:33:45,356: +SERVICE [/turtle1/teleport_absolute] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 14:33:45,358: -PUB [/rosout] /rosservice_37043_1644384825328 http://hh:41607/
+[rosmaster.master][INFO] 2022-02-09 14:33:45,358: -SERVICE [/rosservice_37043_1644384825328/get_loggers] /rosservice_37043_1644384825328 rosrpc://hh:35783
+[rosmaster.master][INFO] 2022-02-09 14:33:45,358: -SERVICE [/rosservice_37043_1644384825328/set_logger_level] /rosservice_37043_1644384825328 rosrpc://hh:35783
+[rosmaster.master][INFO] 2022-02-09 14:33:45,370: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:42999/', 'http://hh:41607/']
+[rosmaster.master][INFO] 2022-02-09 14:33:45,371: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:42999/', 'http://hh:41607/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:33:45,371: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:42999/']
+[rosmaster.master][INFO] 2022-02-09 14:33:45,372: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:42999/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:36:25,987: +PUB [/rosout] /rosservice_37118_1644384985871 http://hh:32985/
+[rosmaster.master][INFO] 2022-02-09 14:36:25,990: +SERVICE [/rosservice_37118_1644384985871/get_loggers] /rosservice_37118_1644384985871 http://hh:32985/
+[rosmaster.master][INFO] 2022-02-09 14:36:25,991: +SERVICE [/rosservice_37118_1644384985871/set_logger_level] /rosservice_37118_1644384985871 http://hh:32985/
+[rosmaster.master][INFO] 2022-02-09 14:36:26,003: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:42999/', 'http://hh:32985/']
+[rosmaster.master][INFO] 2022-02-09 14:36:26,005: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:42999/', 'http://hh:32985/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:36:26,010: -PUB [/rosout] /rosservice_37118_1644384985871 http://hh:32985/
+[rosmaster.master][INFO] 2022-02-09 14:36:26,011: -SERVICE [/rosservice_37118_1644384985871/get_loggers] /rosservice_37118_1644384985871 rosrpc://hh:35809
+[rosmaster.master][INFO] 2022-02-09 14:36:26,011: -SERVICE [/rosservice_37118_1644384985871/set_logger_level] /rosservice_37118_1644384985871 rosrpc://hh:35809
+[rosmaster.master][INFO] 2022-02-09 14:36:26,082: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:42999/']
+[rosmaster.master][INFO] 2022-02-09 14:36:26,083: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:42999/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:37:56,150: +PUB [/rosout] /rosservice_37166_1644385076135 http://hh:34695/
+[rosmaster.master][INFO] 2022-02-09 14:37:56,151: +SERVICE [/rosservice_37166_1644385076135/get_loggers] /rosservice_37166_1644385076135 http://hh:34695/
+[rosmaster.master][INFO] 2022-02-09 14:37:56,151: +SERVICE [/rosservice_37166_1644385076135/set_logger_level] /rosservice_37166_1644385076135 http://hh:34695/
+[rosmaster.master][INFO] 2022-02-09 14:37:56,161: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:42999/', 'http://hh:34695/']
+[rosmaster.master][INFO] 2022-02-09 14:37:56,162: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:42999/', 'http://hh:34695/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:37:56,169: -PUB [/rosout] /rosservice_37166_1644385076135 http://hh:34695/
+[rosmaster.master][INFO] 2022-02-09 14:37:56,169: -SERVICE [/rosservice_37166_1644385076135/get_loggers] /rosservice_37166_1644385076135 rosrpc://hh:43807
+[rosmaster.master][INFO] 2022-02-09 14:37:56,169: -SERVICE [/rosservice_37166_1644385076135/set_logger_level] /rosservice_37166_1644385076135 rosrpc://hh:43807
+[rosmaster.master][INFO] 2022-02-09 14:37:56,181: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:42999/']
+[rosmaster.master][INFO] 2022-02-09 14:37:56,182: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:42999/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:38:51,015: +PUB [/rosout] /rosservice_37224_1644385130899 http://hh:39435/
+[rosmaster.master][INFO] 2022-02-09 14:38:51,019: +SERVICE [/rosservice_37224_1644385130899/get_loggers] /rosservice_37224_1644385130899 http://hh:39435/
+[rosmaster.master][INFO] 2022-02-09 14:38:51,020: +SERVICE [/rosservice_37224_1644385130899/set_logger_level] /rosservice_37224_1644385130899 http://hh:39435/
+[rosmaster.master][INFO] 2022-02-09 14:38:51,034: -PUB [/rosout] /rosservice_37224_1644385130899 http://hh:39435/
+[rosmaster.master][INFO] 2022-02-09 14:38:51,034: -SERVICE [/rosservice_37224_1644385130899/get_loggers] /rosservice_37224_1644385130899 rosrpc://hh:41835
+[rosmaster.master][INFO] 2022-02-09 14:38:51,035: -SERVICE [/rosservice_37224_1644385130899/set_logger_level] /rosservice_37224_1644385130899 rosrpc://hh:41835
+[rosmaster.master][INFO] 2022-02-09 14:38:51,062: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:42999/', 'http://hh:39435/']
+[rosmaster.master][INFO] 2022-02-09 14:38:51,063: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:42999/', 'http://hh:39435/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:38:51,063: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:42999/']
+[rosmaster.master][INFO] 2022-02-09 14:38:51,064: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:42999/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:39:42,858: +PUB [/rosout] /rosservice_37270_1644385182743 http://hh:39093/
+[rosmaster.master][INFO] 2022-02-09 14:39:42,862: +SERVICE [/rosservice_37270_1644385182743/get_loggers] /rosservice_37270_1644385182743 http://hh:39093/
+[rosmaster.master][INFO] 2022-02-09 14:39:42,862: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:42999/', 'http://hh:39093/']
+[rosmaster.master][INFO] 2022-02-09 14:39:42,863: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:42999/', 'http://hh:39093/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:39:42,864: +SERVICE [/rosservice_37270_1644385182743/set_logger_level] /rosservice_37270_1644385182743 http://hh:39093/
+[rosmaster.master][INFO] 2022-02-09 14:39:42,876: +SUB [/turtle2/cmd_vel] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 14:39:42,877: +PUB [/turtle2/pose] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 14:39:42,877: +PUB [/turtle2/color_sensor] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 14:39:42,878: +SERVICE [/turtle2/set_pen] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 14:39:42,879: +SERVICE [/turtle2/teleport_relative] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 14:39:42,879: +SERVICE [/turtle2/teleport_absolute] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 14:39:42,882: -PUB [/rosout] /rosservice_37270_1644385182743 http://hh:39093/
+[rosmaster.master][INFO] 2022-02-09 14:39:42,882: -SERVICE [/rosservice_37270_1644385182743/get_loggers] /rosservice_37270_1644385182743 rosrpc://hh:45659
+[rosmaster.master][INFO] 2022-02-09 14:39:42,882: -SERVICE [/rosservice_37270_1644385182743/set_logger_level] /rosservice_37270_1644385182743 rosrpc://hh:45659
+[rosmaster.master][INFO] 2022-02-09 14:39:42,883: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:42999/']
+[rosmaster.master][INFO] 2022-02-09 14:39:42,884: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:42999/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:43:27,939: +SERVICE [/rostopic_37522_1644385407823/get_loggers] /rostopic_37522_1644385407823 http://hh:45603/
+[rosmaster.master][INFO] 2022-02-09 14:43:27,941: +SERVICE [/rostopic_37522_1644385407823/set_logger_level] /rostopic_37522_1644385407823 http://hh:45603/
+[rosmaster.master][INFO] 2022-02-09 14:43:27,943: +PUB [/turtle2/cmd_vel] /rostopic_37522_1644385407823 http://hh:45603/
+[rosmaster.master][INFO] 2022-02-09 14:43:27,953: publisherUpdate[/turtle2/cmd_vel] -> http://hh:46241/ ['http://hh:45603/']
+[rosmaster.master][INFO] 2022-02-09 14:43:27,954: publisherUpdate[/turtle2/cmd_vel] -> http://hh:46241/ ['http://hh:45603/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:43:46,599: -PUB [/turtle2/cmd_vel] /rostopic_37522_1644385407823 http://hh:45603/
+[rosmaster.master][INFO] 2022-02-09 14:43:46,600: -SERVICE [/rostopic_37522_1644385407823/get_loggers] /rostopic_37522_1644385407823 rosrpc://hh:46587
+[rosmaster.master][INFO] 2022-02-09 14:43:46,600: -SERVICE [/rostopic_37522_1644385407823/set_logger_level] /rostopic_37522_1644385407823 rosrpc://hh:46587
+[rosmaster.master][INFO] 2022-02-09 14:43:46,649: publisherUpdate[/turtle2/cmd_vel] -> http://hh:46241/ []
+[rosmaster.master][INFO] 2022-02-09 14:43:46,650: publisherUpdate[/turtle2/cmd_vel] -> http://hh:46241/ []: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:43:52,196: +SERVICE [/rostopic_37551_1644385432080/get_loggers] /rostopic_37551_1644385432080 http://hh:37357/
+[rosmaster.master][INFO] 2022-02-09 14:43:52,198: +SERVICE [/rostopic_37551_1644385432080/set_logger_level] /rostopic_37551_1644385432080 http://hh:37357/
+[rosmaster.master][INFO] 2022-02-09 14:43:52,200: +PUB [/turtle2/cmd_vel] /rostopic_37551_1644385432080 http://hh:37357/
+[rosmaster.master][INFO] 2022-02-09 14:43:52,262: publisherUpdate[/turtle2/cmd_vel] -> http://hh:46241/ ['http://hh:37357/']
+[rosmaster.master][INFO] 2022-02-09 14:43:52,263: publisherUpdate[/turtle2/cmd_vel] -> http://hh:46241/ ['http://hh:37357/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:43:53,655: -PUB [/turtle2/cmd_vel] /rostopic_37551_1644385432080 http://hh:37357/
+[rosmaster.master][INFO] 2022-02-09 14:43:53,656: -SERVICE [/rostopic_37551_1644385432080/get_loggers] /rostopic_37551_1644385432080 rosrpc://hh:40067
+[rosmaster.master][INFO] 2022-02-09 14:43:53,656: -SERVICE [/rostopic_37551_1644385432080/set_logger_level] /rostopic_37551_1644385432080 rosrpc://hh:40067
+[rosmaster.master][INFO] 2022-02-09 14:43:53,666: publisherUpdate[/turtle2/cmd_vel] -> http://hh:46241/ []
+[rosmaster.master][INFO] 2022-02-09 14:43:53,667: publisherUpdate[/turtle2/cmd_vel] -> http://hh:46241/ []: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:45:17,277: +PUB [/rosout] /another_node http://hh:41217/
+[rosmaster.master][INFO] 2022-02-09 14:45:17,278: +SERVICE [/another_node/get_loggers] /another_node http://hh:41217/
+[rosmaster.master][INFO] 2022-02-09 14:45:17,278: +SERVICE [/another_node/set_logger_level] /another_node http://hh:41217/
+[rosmaster.master][INFO] 2022-02-09 14:45:17,279: +PARAM [/another_node/background_r] by /another_node
+[rosmaster.master][INFO] 2022-02-09 14:45:17,279: +PARAM [/another_node/background_g] by /another_node
+[rosmaster.master][INFO] 2022-02-09 14:45:17,280: +PARAM [/another_node/background_b] by /another_node
+[rosmaster.master][INFO] 2022-02-09 14:45:17,288: +SERVICE [/clear] /another_node http://hh:41217/
+[rosmaster.master][INFO] 2022-02-09 14:45:17,288: +SERVICE [/reset] /another_node http://hh:41217/
+[rosmaster.master][INFO] 2022-02-09 14:45:17,288: +SERVICE [/spawn] /another_node http://hh:41217/
+[rosmaster.master][INFO] 2022-02-09 14:45:17,289: +SERVICE [/kill] /another_node http://hh:41217/
+[rosmaster.master][INFO] 2022-02-09 14:45:17,289: +CACHEDPARAM [/rosout_disable_topics_generation] by /another_node
+[rosmaster.master][INFO] 2022-02-09 14:45:17,290: +SUB [/turtle1/cmd_vel] /another_node http://hh:41217/
+[rosmaster.master][INFO] 2022-02-09 14:45:17,290: +PUB [/turtle1/pose] /another_node http://hh:41217/
+[rosmaster.master][INFO] 2022-02-09 14:45:17,291: +PUB [/turtle1/color_sensor] /another_node http://hh:41217/
+[rosmaster.master][INFO] 2022-02-09 14:45:17,291: +SERVICE [/turtle1/set_pen] /another_node http://hh:41217/
+[rosmaster.master][INFO] 2022-02-09 14:45:17,291: +SERVICE [/turtle1/teleport_relative] /another_node http://hh:41217/
+[rosmaster.master][INFO] 2022-02-09 14:45:17,291: +SERVICE [/turtle1/teleport_absolute] /another_node http://hh:41217/
+[rosmaster.master][INFO] 2022-02-09 14:45:17,329: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:42999/', 'http://hh:41217/']
+[rosmaster.master][INFO] 2022-02-09 14:45:17,330: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:42999/', 'http://hh:41217/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:45:57,344: -PUB [/turtle1/cmd_vel] /rqt_gui_py_node_36905 http://hh:42999/
+[rosmaster.master][INFO] 2022-02-09 14:45:57,345: publisherUpdate[/turtle1/cmd_vel] -> http://hh:46241/ ['http://hh:44633/']
+[rosmaster.master][INFO] 2022-02-09 14:45:57,346: publisherUpdate[/turtle1/cmd_vel] -> http://hh:46241/ ['http://hh:44633/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:45:57,346: publisherUpdate[/turtle1/cmd_vel] -> http://hh:41217/ ['http://hh:44633/']
+[rosmaster.master][INFO] 2022-02-09 14:45:57,347: publisherUpdate[/turtle1/cmd_vel] -> http://hh:41217/ ['http://hh:44633/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:45:57,384: -PUB [/rosout] /rqt_gui_py_node_36905 http://hh:42999/
+[rosmaster.master][INFO] 2022-02-09 14:45:57,384: -SERVICE [/rqt_gui_py_node_36905/get_loggers] /rqt_gui_py_node_36905 rosrpc://hh:36729
+[rosmaster.master][INFO] 2022-02-09 14:45:57,385: -SERVICE [/rqt_gui_py_node_36905/set_logger_level] /rqt_gui_py_node_36905 rosrpc://hh:36729
+[rosmaster.master][INFO] 2022-02-09 14:45:57,430: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:41217/']
+[rosmaster.master][INFO] 2022-02-09 14:45:57,431: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:41217/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:46:07,539: +PUB [/rosout] /rqt_gui_py_node_37664 http://hh:44165/
+[rosmaster.master][INFO] 2022-02-09 14:46:07,543: +SERVICE [/rqt_gui_py_node_37664/get_loggers] /rqt_gui_py_node_37664 http://hh:44165/
+[rosmaster.master][INFO] 2022-02-09 14:46:07,544: +SERVICE [/rqt_gui_py_node_37664/set_logger_level] /rqt_gui_py_node_37664 http://hh:44165/
+[rosmaster.master][INFO] 2022-02-09 14:46:07,552: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:41217/', 'http://hh:44165/']
+[rosmaster.master][INFO] 2022-02-09 14:46:07,554: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:41217/', 'http://hh:44165/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:46:07,566: +SUB [/statistics] /rqt_gui_py_node_37664 http://hh:44165/
+[rosmaster.master][INFO] 2022-02-09 14:48:44,502: -SUB [/statistics] /rqt_gui_py_node_37664 http://hh:44165/
+[rosmaster.master][INFO] 2022-02-09 14:48:44,502: -PUB [/rosout] /rqt_gui_py_node_37664 http://hh:44165/
+[rosmaster.master][INFO] 2022-02-09 14:48:44,502: -SERVICE [/rqt_gui_py_node_37664/get_loggers] /rqt_gui_py_node_37664 rosrpc://hh:44011
+[rosmaster.master][INFO] 2022-02-09 14:48:44,502: -SERVICE [/rqt_gui_py_node_37664/set_logger_level] /rqt_gui_py_node_37664 rosrpc://hh:44011
+[rosmaster.master][INFO] 2022-02-09 14:48:44,532: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:41217/']
+[rosmaster.master][INFO] 2022-02-09 14:48:44,533: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:41217/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:49:43,058: +PUB [/rosout] /rosservice_37718_1644385782942 http://hh:40295/
+[rosmaster.master][INFO] 2022-02-09 14:49:43,062: +SERVICE [/rosservice_37718_1644385782942/get_loggers] /rosservice_37718_1644385782942 http://hh:40295/
+[rosmaster.master][INFO] 2022-02-09 14:49:43,063: +SERVICE [/rosservice_37718_1644385782942/set_logger_level] /rosservice_37718_1644385782942 http://hh:40295/
+[rosmaster.master][INFO] 2022-02-09 14:49:43,082: -SERVICE [/turtle1/teleport_absolute] /another_node rosrpc://hh:47017
+[rosmaster.master][INFO] 2022-02-09 14:49:43,083: -SERVICE [/turtle1/teleport_relative] /another_node rosrpc://hh:47017
+[rosmaster.master][INFO] 2022-02-09 14:49:43,084: -SERVICE [/turtle1/set_pen] /another_node rosrpc://hh:47017
+[rosmaster.master][INFO] 2022-02-09 14:49:43,084: -PUB [/turtle1/color_sensor] /another_node http://hh:41217/
+[rosmaster.master][INFO] 2022-02-09 14:49:43,084: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:41217/', 'http://hh:40295/']
+[rosmaster.master][INFO] 2022-02-09 14:49:43,085: -PUB [/turtle1/pose] /another_node http://hh:41217/
+[rosmaster.master][INFO] 2022-02-09 14:49:43,086: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:41217/', 'http://hh:40295/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:49:43,087: -SUB [/turtle1/cmd_vel] /another_node http://hh:41217/
+[rosmaster.master][INFO] 2022-02-09 14:49:43,089: -PUB [/rosout] /rosservice_37718_1644385782942 http://hh:40295/
+[rosmaster.master][INFO] 2022-02-09 14:49:43,089: -SERVICE [/rosservice_37718_1644385782942/get_loggers] /rosservice_37718_1644385782942 rosrpc://hh:39267
+[rosmaster.master][INFO] 2022-02-09 14:49:43,089: -SERVICE [/rosservice_37718_1644385782942/set_logger_level] /rosservice_37718_1644385782942 rosrpc://hh:39267
+[rosmaster.master][INFO] 2022-02-09 14:49:43,144: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:41217/']
+[rosmaster.master][INFO] 2022-02-09 14:49:43,145: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:41217/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:50:10,190: +PUB [/rosout] /rosservice_37727_1644385810073 http://hh:39571/
+[rosmaster.master][INFO] 2022-02-09 14:50:10,194: +SERVICE [/rosservice_37727_1644385810073/get_loggers] /rosservice_37727_1644385810073 http://hh:39571/
+[rosmaster.master][INFO] 2022-02-09 14:50:10,195: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:41217/', 'http://hh:39571/']
+[rosmaster.master][INFO] 2022-02-09 14:50:10,196: +SERVICE [/rosservice_37727_1644385810073/set_logger_level] /rosservice_37727_1644385810073 http://hh:39571/
+[rosmaster.master][INFO] 2022-02-09 14:50:10,197: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:41217/', 'http://hh:39571/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:50:10,206: +SUB [/turtle1/cmd_vel] /another_node http://hh:41217/
+[rosmaster.master][INFO] 2022-02-09 14:50:10,207: +PUB [/turtle1/pose] /another_node http://hh:41217/
+[rosmaster.master][INFO] 2022-02-09 14:50:10,208: +PUB [/turtle1/color_sensor] /another_node http://hh:41217/
+[rosmaster.master][INFO] 2022-02-09 14:50:10,208: +SERVICE [/turtle1/set_pen] /another_node http://hh:41217/
+[rosmaster.master][INFO] 2022-02-09 14:50:10,209: +SERVICE [/turtle1/teleport_relative] /another_node http://hh:41217/
+[rosmaster.master][INFO] 2022-02-09 14:50:10,210: +SERVICE [/turtle1/teleport_absolute] /another_node http://hh:41217/
+[rosmaster.master][INFO] 2022-02-09 14:50:10,212: -PUB [/rosout] /rosservice_37727_1644385810073 http://hh:39571/
+[rosmaster.master][INFO] 2022-02-09 14:50:10,212: -SERVICE [/rosservice_37727_1644385810073/get_loggers] /rosservice_37727_1644385810073 rosrpc://hh:42507
+[rosmaster.master][INFO] 2022-02-09 14:50:10,213: -SERVICE [/rosservice_37727_1644385810073/set_logger_level] /rosservice_37727_1644385810073 rosrpc://hh:42507
+[rosmaster.master][INFO] 2022-02-09 14:50:10,232: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:41217/']
+[rosmaster.master][INFO] 2022-02-09 14:50:10,234: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:41217/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:51:19,320: +PARAM [/another_node/background_b] by /rosparam-37789
+[rosmaster.master][INFO] 2022-02-09 14:51:19,321: +PARAM [/another_node/background_g] by /rosparam-37789
+[rosmaster.master][INFO] 2022-02-09 14:51:19,321: +PARAM [/another_node/background_r] by /rosparam-37789
+[rosmaster.master][INFO] 2022-02-09 14:51:19,322: +PARAM [/rosdistro] by /rosparam-37789
+[rosmaster.master][INFO] 2022-02-09 14:51:19,323: +PARAM [/roslaunch/uris/host_hh__45733] by /rosparam-37789
+[rosmaster.master][INFO] 2022-02-09 14:51:19,323: +PARAM [/rosversion] by /rosparam-37789
+[rosmaster.master][INFO] 2022-02-09 14:51:19,324: +PARAM [/run_id] by /rosparam-37789
+[rosmaster.master][INFO] 2022-02-09 14:51:19,324: +PARAM [/turtlesim/background_b] by /rosparam-37789
+[rosmaster.master][INFO] 2022-02-09 14:51:19,325: +PARAM [/turtlesim/background_g] by /rosparam-37789
+[rosmaster.master][INFO] 2022-02-09 14:51:19,325: +PARAM [/turtlesim/background_r] by /rosparam-37789
+[rosmaster.master][INFO] 2022-02-09 14:51:27,127: +PUB [/rosout] /rosservice_37801_1644385887112 http://hh:44685/
+[rosmaster.master][INFO] 2022-02-09 14:51:27,128: +SERVICE [/rosservice_37801_1644385887112/get_loggers] /rosservice_37801_1644385887112 http://hh:44685/
+[rosmaster.master][INFO] 2022-02-09 14:51:27,128: +SERVICE [/rosservice_37801_1644385887112/set_logger_level] /rosservice_37801_1644385887112 http://hh:44685/
+[rosmaster.master][INFO] 2022-02-09 14:51:27,132: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:41217/', 'http://hh:44685/']
+[rosmaster.master][INFO] 2022-02-09 14:51:27,132: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:41217/', 'http://hh:44685/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:51:27,148: -PUB [/rosout] /rosservice_37801_1644385887112 http://hh:44685/
+[rosmaster.master][INFO] 2022-02-09 14:51:27,148: -SERVICE [/rosservice_37801_1644385887112/get_loggers] /rosservice_37801_1644385887112 rosrpc://hh:42531
+[rosmaster.master][INFO] 2022-02-09 14:51:27,148: -SERVICE [/rosservice_37801_1644385887112/set_logger_level] /rosservice_37801_1644385887112 rosrpc://hh:42531
+[rosmaster.master][INFO] 2022-02-09 14:51:27,177: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:41217/']
+[rosmaster.master][INFO] 2022-02-09 14:51:27,178: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/', 'http://hh:41217/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:51:43,958: -SERVICE [/turtle1/teleport_absolute] /another_node rosrpc://hh:47017
+[rosmaster.master][INFO] 2022-02-09 14:51:43,959: -SERVICE [/turtle1/teleport_relative] /another_node rosrpc://hh:47017
+[rosmaster.master][INFO] 2022-02-09 14:51:43,959: -SERVICE [/turtle1/set_pen] /another_node rosrpc://hh:47017
+[rosmaster.master][INFO] 2022-02-09 14:51:43,960: -PUB [/turtle1/color_sensor] /another_node http://hh:41217/
+[rosmaster.master][INFO] 2022-02-09 14:51:43,960: -PUB [/turtle1/pose] /another_node http://hh:41217/
+[rosmaster.master][INFO] 2022-02-09 14:51:43,960: -SUB [/turtle1/cmd_vel] /another_node http://hh:41217/
+[rosmaster.master][INFO] 2022-02-09 14:51:43,960: -SERVICE [/kill] /another_node rosrpc://hh:47017
+[rosmaster.master][INFO] 2022-02-09 14:51:43,961: -SERVICE [/spawn] /another_node rosrpc://hh:47017
+[rosmaster.master][INFO] 2022-02-09 14:51:43,961: -SERVICE [/reset] /another_node rosrpc://hh:47017
+[rosmaster.master][INFO] 2022-02-09 14:51:43,961: -SERVICE [/clear] /another_node rosrpc://hh:47017
+[rosmaster.master][INFO] 2022-02-09 14:51:44,135: -PUB [/rosout] /another_node http://hh:41217/
+[rosmaster.master][INFO] 2022-02-09 14:51:44,136: -SERVICE [/another_node/get_loggers] /another_node rosrpc://hh:47017
+[rosmaster.master][INFO] 2022-02-09 14:51:44,137: -SERVICE [/another_node/set_logger_level] /another_node rosrpc://hh:47017
+[rosmaster.master][INFO] 2022-02-09 14:51:44,138: -CACHEDPARAM [/rosout_disable_topics_generation] by /another_node
+[rosmaster.master][INFO] 2022-02-09 14:51:44,163: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/']
+[rosmaster.master][INFO] 2022-02-09 14:51:44,165: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:46241/', 'http://hh:44633/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:51:45,529: -SERVICE [/turtle2/teleport_absolute] /turtlesim rosrpc://hh:34333
+[rosmaster.master][INFO] 2022-02-09 14:51:45,530: -SERVICE [/turtle2/teleport_relative] /turtlesim rosrpc://hh:34333
+[rosmaster.master][INFO] 2022-02-09 14:51:45,531: -SERVICE [/turtle2/set_pen] /turtlesim rosrpc://hh:34333
+[rosmaster.master][INFO] 2022-02-09 14:51:45,532: -PUB [/turtle2/color_sensor] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 14:51:45,533: -PUB [/turtle2/pose] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 14:51:45,534: -SUB [/turtle2/cmd_vel] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 14:51:45,534: -SERVICE [/turtle1/teleport_absolute] /turtlesim rosrpc://hh:34333
+[rosmaster.master][INFO] 2022-02-09 14:51:45,535: -SERVICE [/turtle1/teleport_relative] /turtlesim rosrpc://hh:34333
+[rosmaster.master][INFO] 2022-02-09 14:51:45,536: -SERVICE [/turtle1/set_pen] /turtlesim rosrpc://hh:34333
+[rosmaster.master][INFO] 2022-02-09 14:51:45,536: -PUB [/turtle1/color_sensor] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 14:51:45,537: -PUB [/turtle1/pose] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 14:51:45,538: -SUB [/turtle1/cmd_vel] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 14:51:45,538: -SERVICE [/kill] /turtlesim rosrpc://hh:34333
+[rosmaster.master][INFO] 2022-02-09 14:51:45,539: -SERVICE [/spawn] /turtlesim rosrpc://hh:34333
+[rosmaster.master][INFO] 2022-02-09 14:51:45,540: -SERVICE [/reset] /turtlesim rosrpc://hh:34333
+[rosmaster.master][INFO] 2022-02-09 14:51:45,541: -SERVICE [/clear] /turtlesim rosrpc://hh:34333
+[rosmaster.master][INFO] 2022-02-09 14:51:45,693: -PUB [/rosout] /turtlesim http://hh:46241/
+[rosmaster.master][INFO] 2022-02-09 14:51:45,694: -SERVICE [/turtlesim/get_loggers] /turtlesim rosrpc://hh:34333
+[rosmaster.master][INFO] 2022-02-09 14:51:45,695: -SERVICE [/turtlesim/set_logger_level] /turtlesim rosrpc://hh:34333
+[rosmaster.master][INFO] 2022-02-09 14:51:45,696: -CACHEDPARAM [/rosout_disable_topics_generation] by /turtlesim
+[rosmaster.master][INFO] 2022-02-09 14:51:45,714: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:44633/']
+[rosmaster.master][INFO] 2022-02-09 14:51:45,715: publisherUpdate[/rosout] -> http://hh:38425/ ['http://hh:44633/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:53:02,679: -PUB [/rosout] /teleop_turtle http://hh:44633/
+[rosmaster.master][INFO] 2022-02-09 14:53:02,680: -PUB [/turtle1/cmd_vel] /teleop_turtle http://hh:44633/
+[rosmaster.master][INFO] 2022-02-09 14:53:02,681: -SERVICE [/teleop_turtle/get_loggers] /teleop_turtle rosrpc://hh:32845
+[rosmaster.master][INFO] 2022-02-09 14:53:02,682: -SERVICE [/teleop_turtle/set_logger_level] /teleop_turtle rosrpc://hh:32845
+[rosmaster.master][INFO] 2022-02-09 14:53:02,728: publisherUpdate[/rosout] -> http://hh:38425/ []
+[rosmaster.master][INFO] 2022-02-09 14:53:02,729: publisherUpdate[/rosout] -> http://hh:38425/ []: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2022-02-09 14:53:04,131: -PUB [/rosout_agg] /rosout http://hh:38425/
+[rosmaster.master][INFO] 2022-02-09 14:53:04,132: -SUB [/rosout] /rosout http://hh:38425/
+[rosmaster.master][INFO] 2022-02-09 14:53:04,132: -SERVICE [/rosout/get_loggers] /rosout rosrpc://hh:56113
+[rosmaster.master][INFO] 2022-02-09 14:53:04,132: -SERVICE [/rosout/set_logger_level] /rosout rosrpc://hh:56113
+[rosmaster.master][INFO] 2022-02-09 14:53:04,133: -CACHEDPARAM [/rosout/omit_topics] by /rosout
+[rosmaster.main][INFO] 2022-02-09 14:53:04,188: keyboard interrupt, will exit
+[rosmaster.main][INFO] 2022-02-09 14:53:04,188: stopping master...
+[rospy.core][INFO] 2022-02-09 14:53:04,189: signal_shutdown [atexit]
